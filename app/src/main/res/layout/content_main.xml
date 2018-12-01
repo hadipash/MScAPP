@@ -14,11 +14,13 @@
         android:layout_height="wrap_content"
         android:orientation="vertical">
 
+        <!-- Slider part -->
         <androidx.viewpager.widget.ViewPager
             android:id="@+id/header_slider"
             android:layout_width="match_parent"
             android:layout_height="200dp" />
 
+        <!-- Programme Overview part -->
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -50,13 +52,45 @@
                 android:id="@+id/prog_over_brief"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="The MSc(CompSc) programme is a comprehensive postgraduate study programme provides advanced and in-depth learning in Computer Science. The programme is credit unit based, with courses of both applied and fundamental nature. Students can choose from a comprehensive and diversified study in Computer Science courses or focussed streams of study. Focussed streams of study represent a cohesive collection of related courses that provides both fundamental and in-depth exposure to students in a given ICT domain."
                 android:textColor="#dd000000"
                 android:textSize="16sp"
                 android:justificationMode="inter_word"
                 tools:targetApi="o" />
 
+            <Button
+                android:id="@+id/prog_over_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/more_detail"
+                android:layout_gravity="center" />
+
         </LinearLayout>
+
+
+        <!--Message from Programme Director part-->
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:src="@drawable/mfpd_bg"
+                android:contentDescription="TODO"
+                android:scaleType="centerCrop" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/mfpd"
+                android:textColor="#E0F7FA"
+                android:textSize="15sp"
+                android:textStyle="bold"
+                android:background="#4d000000"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"/>
+
+        </RelativeLayout>
 
 
     </LinearLayout>
