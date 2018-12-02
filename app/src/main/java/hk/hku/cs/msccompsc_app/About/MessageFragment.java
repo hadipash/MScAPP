@@ -1,7 +1,5 @@
 package hk.hku.cs.msccompsc_app.About;
 
-import android.content.Context;
-import android.net.Uri;
 import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;

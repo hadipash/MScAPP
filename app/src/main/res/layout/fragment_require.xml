@@ -4,10 +4,11 @@ xmlns:tools="http://schemas.android.com/tools"
 android:layout_width="match_parent"
 android:layout_height="match_parent"
 android:background="@color/pageOrange"
-tools:context=".About.MessageFragment">
+tools:context=".Admission.RequireFragment">
 
 <!-- TODO: Update blank fragment layout -->
 <TextView
+    android:id="@+id/requirement_text"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:textColor="@color/colorName"
@@ -16,9 +17,9 @@ tools:context=".About.MessageFragment">
     android:layout_marginRight="8dp"
     android:layout_marginLeft="8dp"
     android:layout_marginTop="5dp"
-    android:drawableBottom="@drawable/chowkp"
     android:fontFamily="@font/calibrib"
+    android:linksClickable="true"
+    android:autoLink="all"
     android:justificationMode="inter_word"
-    tools:targetApi="o"
-    android:text="@string/messageFPD_fragment" />
+    tools:targetApi="o" />
 </ScrollView>

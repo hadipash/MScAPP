@@ -14,6 +14,7 @@ import androidx.appcompat.app.ActionBarDrawerToggle;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.Toolbar;
 import hk.hku.cs.msccompsc_app.About.MainAbout;
+import hk.hku.cs.msccompsc_app.Admission.MainAdmission;
 
 import android.view.Menu;
 import android.view.MenuItem;
@@ -91,9 +92,10 @@ public class MainActivity extends AppCompatActivity
             Log.d(TAG, "About clicked.");
             Intent intent_about = new Intent(this, MainAbout.class);
             startActivity(intent_about);
-
-        } else if (id == R.id.nav_gallery) {
-
+        } else if (id == R.id.nav_admission) {
+            Log.d(TAG, "Admission clicked.");
+            Intent intent_admission = new Intent(this, MainAdmission.class);
+            startActivity(intent_admission);
         } else if (id == R.id.nav_slideshow) {
 
         } else if (id == R.id.nav_manage) {

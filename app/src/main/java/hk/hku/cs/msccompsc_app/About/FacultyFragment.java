@@ -20,7 +20,6 @@ public class FacultyFragment extends Fragment {
     private RecyclerView.LayoutManager mLayoutManager;
 
 
-
     @Nullable
     @Override
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container,

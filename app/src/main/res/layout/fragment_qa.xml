@@ -1,18 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
-
 <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/pageOrange"
-    tools:context=".About.AboutHKUFragment">
+    tools:context=".Admission.FeeFragment">
 
-   <androidx.appcompat.widget.LinearLayoutCompat
-       android:layout_width="match_parent"
-       android:layout_height="wrap_content"
-       android:orientation="vertical">
-
+    <!-- TODO: Update blank fragment layout -->
     <TextView
+        android:id="@+id/qa_text"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:textColor="@color/colorName"
@@ -22,18 +18,8 @@
         android:layout_marginLeft="8dp"
         android:layout_marginTop="5dp"
         android:fontFamily="@font/calibrib"
+        android:linksClickable="true"
+        android:autoLink="all"
         android:justificationMode="inter_word"
-        tools:targetApi="o"
-        android:text="@string/aboutHKU_fragement" />
-
-    <ImageView
-        android:layout_width="match_parent"
-        android:layout_height="150dp"
-        android:src="@drawable/slider1"
-        android:contentDescription="TODO"
-        android:scaleType="centerCrop" />
-
-   </androidx.appcompat.widget.LinearLayoutCompat>>
-
+        tools:targetApi="o" />
 </ScrollView>
-
