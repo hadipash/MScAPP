@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">MSc(CompSc)_App</string>
+    <string name="app_name">MSc in Computer Science</string>
     <string name="navigation_drawer_open">Open navigation drawer</string>
     <string name="navigation_drawer_close">Close navigation drawer</string>
     <string name="nav_header_title">Android Studio</string>
@@ -35,4 +35,5 @@
         it had a student population of over 27,800, including over 16,100 undergraduates and 11,700 postgraduates, and an academic staff population of around 3,400.
         Coupled with an active alumni network and generous endowments for programme research and development, HKU is a dynamic and exciting institution.
         Stepping into Asia’s next century of phenomenal growth.</string>>
+    <string name="pd">Programme Director</string>
 </resources>
