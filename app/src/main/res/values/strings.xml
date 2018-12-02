@@ -7,6 +7,11 @@
     <string name="nav_header_desc">Navigation header</string>
     <string name="action_settings">Settings</string>
 
+    <string name="msc_hku">Master of Science in Computer Science, HKU</string>
+    <string name="prog_over">Programme Overview</string>
+    <string name="more_detail">More Detail</string>
+    <string name="mfpd">Message from the Programme Director</string>
+
     <!-- TODO: Remove or change this placeholder text -->
     <string name="messageFPD_fragment">We are living in the era where technology is widely accepted and becomes so commonplace that we doubt how we ever live without it.
         Mobile is a good prominent example. From businesses to individual consumers, everyone is connected to everyone, everywhere, all the time.
@@ -22,7 +27,7 @@
         Dr. K.P. Chow\n
         Programme Director</string>
 
-    <string name="aboutHKU_fragement">The University of Hong Kong (HKU), founded in 1911, is the oldest of Hong Kong’s institutions of higher learning.
+    <string name="aboutHKU_fragement"><b>The University of Hong Kong (HKU)</b>, founded in 1911, is the oldest of Hong Kong’s institutions of higher learning.
         It was also the alma mater of Dr. Sun Yat-sen, the founder of modern China.\n\n HKU, as a pre-eminent international university,
         seeks to sustain and enhance its excellence as an institution of higher learning through outstanding teaching and world-class research so as to produce
         well-rounded graduates with lifelong abilities to provide leadership within the societies they serve.\n\n
