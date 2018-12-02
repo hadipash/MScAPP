@@ -11,4 +11,10 @@
     <string name="more_detail">More Detail</string>
     <string name="mfpd">Message from the Programme Director</string>
     <string name="pd">Programme Director</string>
+    <string name="admission">Admission 2019</string>
+    <string name="prog_sch">Programme Schedule</string>
+    <string name="comp_fee">Composition Fees</string>
+    <string name="app_deadlines">Application Deadlines</string>
+    <string name="info_session">Information Session</string>
+    <string name="details_info_session">Details of the information session:</string>
 </resources>
