@@ -20,6 +20,18 @@
             android:id="@+id/nav_manage"
             android:icon="@drawable/ic_menu_manage"
             android:title="Tools" />
+
+        <item
+            android:id="@+id/nav_curriculum"
+            android:icon="@drawable/baseline_book_black_18dp"
+            android:title="Curriculum" />
+
+        <item
+            android:id="@+id/nav_graduate_alumni"
+            android:icon="@drawable/baseline_people_black_18dp"
+            android:title="Graduate and Alumni" />
+
+
     </group>
 
     <item android:title="Communicate">
