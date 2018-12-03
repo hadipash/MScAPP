@@ -26,6 +26,7 @@
             android:layout_height="wrap_content"
             android:orientation="vertical"
             android:layout_marginVertical="@dimen/std_margin_inter"
+            android:layout_marginHorizontal="@dimen/std_margin_horiz"
             tools:targetApi="o" >
 
             <TextView
@@ -58,6 +59,7 @@
                 android:id="@+id/prog_over_brief"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:text="@string/prog_over_detailed"
                 android:textColor="#dd000000"
                 android:textSize="16sp"
                 android:justificationMode="inter_word"
@@ -138,6 +140,7 @@
             android:layout_height="match_parent"
             android:orientation="vertical"
             android:layout_marginVertical="@dimen/std_margin_inter"
+            android:layout_marginHorizontal="@dimen/std_margin_horiz"
             tools:targetApi="o">
 
             <TextView
@@ -154,7 +157,7 @@
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="To help you make a decision, here is a summary of the facts and details you will need - programme schedule, composition fees and application deadlines."
+                android:text="@string/adm_detailed"
                 android:textColor="#dd000000"
                 android:textSize="16sp"
                 android:justificationMode="inter_word"

@@ -8,6 +8,7 @@
 
     <dimen name="std_margin_inter">10dp</dimen>
     <dimen name="std_margin_intra">5dp</dimen>
+    <dimen name="std_margin_horiz">5dp</dimen>
     <dimen name="card_margin">5dp</dimen>
     <dimen name="card_radius">5dp</dimen>
     <dimen name="card_elevation">5dp</dimen>
