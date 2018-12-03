@@ -5,6 +5,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageView;
+import android.widget.RelativeLayout;
 
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
@@ -16,8 +17,12 @@ public class SliderIntro extends Fragment {
     @Override
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
         View rootView = inflater.inflate(R.layout.slider_main, container, false);
+
         ImageView img = rootView.findViewById(R.id.slider_img);
         img.setImageResource(R.drawable.slider1);
+
+        RelativeLayout rl = rootView.findViewById(R.id.slider_overlay);
+        rl.setVisibility(View.VISIBLE);
 
         return rootView;
     }

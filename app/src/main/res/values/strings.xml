@@ -18,6 +18,10 @@
     <string name="app_deadlines">Application Deadlines</string>
     <string name="info_session">Information Session</string>
     <string name="details_info_session">Details of the information session:</string>
+    <string name="msc_compsc">MASTER OF SCIENCE IN COMPUTER SCIENCE</string>
+    <string name="msc_compsc_cn">計算機科學理科碩士課程</string>
+    <string name="msc_slogan">MASTER THE TECHNOLOGY AND STAY AHEAD</string>
+    <string name="adm_button">Admission Details</string>
 
     <!-- TODO: Remove or change this placeholder text -->
     <string name="messageFPD_fragment">We are living in the era where technology is widely accepted and becomes so commonplace that we doubt how we ever live without it.
@@ -38,6 +42,4 @@
         it had a student population of over 27,800, including over 16,100 undergraduates and 11,700 postgraduates, and an academic staff population of around 3,400.
         Coupled with an active alumni network and generous endowments for programme research and development, HKU is a dynamic and exciting institution.
         Stepping into Asia’s next century of phenomenal growth.</string>
-
-
 </resources>

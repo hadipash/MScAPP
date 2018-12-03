@@ -2,14 +2,73 @@
 <RelativeLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
-    android:layout_height="200dp">
+    android:layout_height="match_parent">
 
     <ImageView
         android:id="@+id/slider_img"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:src="@drawable/slider1"
         android:scaleType="centerCrop"
         android:contentDescription="TODO" />
+
+    <RelativeLayout
+        android:id="@+id/slider_overlay"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_marginTop="20dp"
+        android:background="#4d000000"
+        android:visibility="invisible">
+
+        <ImageView
+            android:id="@+id/msc_logo"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:src="@drawable/msc_logo"
+            android:scaleType="centerCrop"
+            android:contentDescription="TODO" />
+
+        <TextView
+            android:id="@+id/msc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/msc_compsc"
+            android:textColor="#FFFFFF"
+            android:textSize="15sp"
+            android:textStyle="bold"
+            android:layout_toEndOf="@id/msc_logo"
+            android:layout_marginTop="10dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/msc_compsc_cn"
+            android:textColor="#FFFFFF"
+            android:textSize="15sp"
+            android:textStyle="bold"
+            android:layout_toEndOf="@id/msc_logo"
+            android:layout_below="@id/msc"
+            android:layout_marginTop="5dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/msc_slogan"
+            android:textColor="#00FFFF"
+            android:textStyle="bold"
+            android:layout_toEndOf="@id/msc_logo"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="10dp"/>
+
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/adm_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/adm_button"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        android:alpha="0.9"
+        android:visibility="invisible"/>
 
 </RelativeLayout>
