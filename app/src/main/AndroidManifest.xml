@@ -22,12 +22,17 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".About.MainAbout" />
-<<<<<<< Updated upstream
-        <activity android:name=".Admission.MainAdmission" />
-=======
-        <activity android:name=".CurriculumActivity" />
->>>>>>> Stashed changes
+        <activity
+            android:name=".About.MainAbout"
+            android:parentActivityName=".MainActivity" />
+
+        <activity
+            android:name=".Admission.MainAdmission"
+            android:parentActivityName=".MainActivity" />
+
+        <activity android:name=".CurriculumActivity"
+            android:parentActivityName=".MainActivity">
+        </activity>
     </application>
 
 </manifest>

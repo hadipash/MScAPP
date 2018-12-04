@@ -13,6 +13,18 @@
     <string name="mfpd">Message from the Programme Director</string>
     <string name="pd">Programme Director</string>
 
+    <string name="admission">Admission 2019</string>
+    <string name="prog_sch">Programme Schedule</string>
+    <string name="comp_fee">Composition Fees</string>
+    <string name="app_deadlines">Application Deadlines</string>
+    <string name="info_session">Information Session</string>
+    <string name="details_info_session">Details of the information session:</string>
+    <string name="msc_compsc">MASTER OF SCIENCE IN COMPUTER SCIENCE</string>
+    <string name="msc_compsc_cn">計算機科學理科碩士課程</string>
+    <string name="msc_slogan">MASTER THE TECHNOLOGY AND STAY AHEAD</string>
+    <string name="adm_button">Admission Details</string>
+
+
     <!-- TODO: Remove or change this placeholder text -->
     <string name="messageFPD_fragment">We are living in the era where technology is widely accepted and becomes so commonplace that we doubt how we ever live without it.
         Mobile is a good prominent example. From businesses to individual consumers, everyone is connected to everyone, everywhere, all the time.
@@ -33,9 +45,8 @@
         Coupled with an active alumni network and generous endowments for programme research and development, HKU is a dynamic and exciting institution.
         Stepping into Asia’s next century of phenomenal growth.</string>
 
-
-<<<<<<< Updated upstream
-=======
+    <string name="prog_over_detailed">The MSc(CompSc) programme is a comprehensive postgraduate study programme provides advanced and in-depth learning in Computer Science. The programme is credit unit based, with courses of both applied and fundamental nature. Students can choose from a comprehensive and diversified study in Computer Science courses or focussed streams of study. Focussed streams of study represent a cohesive collection of related courses that provides both fundamental and in-depth exposure to students in a given ICT domain.</string>
+    <string name="adm_detailed">To help you make a decision, here is a summary of the facts and details you will need - programme schedule, composition fees and application deadlines.</string>
 
     <string name="program_overview"> Programme Overview </string>
     <string name="program_overview_detail">
@@ -45,5 +56,4 @@
     <string name="program_overview_study_stream"> Study Stream </string>
     <string name="pattern_of_study"> Pattern of Study </string>
 
->>>>>>> Stashed changes
 </resources>
