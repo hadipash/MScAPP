@@ -7,7 +7,9 @@
     android:layout_height="match_parent"
     tools:context=".Admission.MainAdmission">
 
+
     <com.google.android.material.appbar.AppBarLayout
+        layout="@layout/app_bar_main"
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
 

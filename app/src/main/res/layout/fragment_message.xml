@@ -3,7 +3,7 @@
 xmlns:tools="http://schemas.android.com/tools"
 android:layout_width="match_parent"
 android:layout_height="match_parent"
-android:background="@color/pageOrange"
+android:background="@color/material_grey_200"
 tools:context=".About.MessageFragment">
 
 <!-- TODO: Update blank fragment layout -->
@@ -15,7 +15,6 @@ tools:context=".About.MessageFragment">
     android:layout_marginRight="8dp"
     android:layout_marginLeft="8dp"
     android:layout_marginTop="5dp"
-    android:drawableBottom="@drawable/chowkp"
     android:fontFamily="@font/calibrib"
     android:textColorLink="@color/pagePurple"
     android:justificationMode="inter_word"

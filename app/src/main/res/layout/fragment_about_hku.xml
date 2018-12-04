@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/pageOrange"
+    android:background="@color/colorPrimary"
     tools:context=".About.AboutHKUFragment">
 
    <androidx.appcompat.widget.LinearLayoutCompat
@@ -15,7 +15,7 @@
     <TextView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:textColor="@color/colorName"
+        android:textColor="@color/material_red_50"
         android:textSize="22sp"
         android:textStyle="bold"
         android:layout_marginRight="8dp"
@@ -29,7 +29,7 @@
     <ImageView
         android:layout_width="match_parent"
         android:layout_height="150dp"
-        android:src="@drawable/slider1"
+        android:src="@drawable/aboutahk_bg"
         android:contentDescription="TODO"
         android:scaleType="centerCrop" />
 

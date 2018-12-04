@@ -30,15 +30,15 @@ public class RequireFragment extends Fragment {
         mtextview = rootview.findViewById(R.id.requirement_text);
 
         String htmltext = "<article class=\"page content-item\">\n" +
-                "<div class=\"container-fluid\">\n" +
-                "    <header>\n" +
-                "        \n" +
-                "    </header>\n" +
-                "    \n" +
-                "<div class=\"orchard-layouts-root\">\n" +
-                "    \n" +
-                "<div class=\"msccs-admission\">\n" +
-                "<h4 class=\"section scrollspy\" id=\"adm-req\" style=\"background:transparent;\"> Admission Requirements</h4>\n" +
+//                "<div class=\"container-fluid\">\n" +
+//                "    <header>\n" +
+//                "        \n" +
+//                "    </header>\n" +
+//                "    \n" +
+//                "<div class=\"orchard-layouts-root\">\n" +
+//                "    \n" +
+//                "<div class=\"msccs-admission\">\n" +
+//                "<h4 class=\"section scrollspy\" id=\"adm-req\" style=\"background:transparent;\"> Admission Requirements</h4>\n" +
                 "\n" +
                 "<div class=\"section scrollspy\" id=\"Eligibility\" style=\"background:transparent;\"><p><strong>Eligibility</strong></p>\n" +
                 "<p>To be eligible for admission to the programmes, a candidate shall satisfy both the University Entrance Requirements and the Programme Entrance Requirements including but not limited to:</p>\n" +
@@ -60,10 +60,10 @@ public class RequireFragment extends Fragment {
                 "<p style=\"padding-left: 30px;\">d. grade C or above in the International General Certificate of Secondary Education (IGCSE); or</p>\n" +
                 "<p style=\"padding-left: 30px;\">e. grade C or above in the Cambridge Test of Proficiency in English Language;</p>\n" +
                 "<p>unless in exceptional circumstances they are exempted from this requirement.</p>\n" +
-                "</div>\n" +
-                "</div>\n" +
-                "</div>\n" +
-                "</div>\n" +
+//                "</div>\n" +
+//                "</div>\n" +
+//                "</div>\n" +
+//                "</div>\n" +
                 "</article>\n" ;
 
 

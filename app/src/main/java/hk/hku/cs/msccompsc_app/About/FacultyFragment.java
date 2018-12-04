@@ -27,7 +27,7 @@ public class FacultyFragment extends Fragment {
         View rootView = inflater.inflate(R.layout.fragment_faculty, container, false);
 
 
-        mRecyclerView = rootView.findViewById(R.id.news_recycle_view);
+        mRecyclerView = rootView.findViewById(R.id.faculty_recycle_view);
         mRecyclerView.setHasFixedSize(true);
 
         mLayoutManager = new GridLayoutManager(rootView.getContext(),3);

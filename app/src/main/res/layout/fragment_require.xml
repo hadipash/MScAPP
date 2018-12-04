@@ -3,23 +3,65 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/pageOrange"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/material_orange_100"
     tools:context=".Admission.RequireFragment">
 
 <!-- TODO: Update blank fragment layout -->
-<TextView
-    android:id="@+id/requirement_text"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:textColor="@color/colorName"
-    android:textSize="22sp"
-    android:layout_marginRight="8dp"
-    android:layout_marginLeft="8dp"
-    android:layout_marginTop="5dp"
-    android:fontFamily="@font/calibrib"
-    android:linksClickable="true"
-    android:autoLink="all"
-    android:textColorLink="@color/pagePurple"
-    android:justificationMode="inter_word"
-    tools:targetApi="o" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="0.5dp">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:src="@drawable/admit_require"
+                android:contentDescription="TODO"
+                android:outlineAmbientShadowColor="@color/material_white_1000"
+                android:scaleType="centerCrop"/>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                app:cardBackgroundColor="#4d000000"
+                app:cardCornerRadius="5dp"
+                app:cardElevation="0dp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="Admission Requirement"
+                    android:textColor="@color/material_white_1000"
+                    android:fontFamily="@font/calibrib"
+                    android:textSize="25sp"
+                    android:textStyle="bold"
+                    android:gravity="center"/>
+
+            </androidx.cardview.widget.CardView>
+
+
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/requirement_text"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:textColor="@color/colorName"
+            android:textSize="22sp"
+            android:layout_marginRight="8dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginTop="5dp"
+            android:fontFamily="@font/calibrib"
+            android:linksClickable="true"
+            android:autoLink="all"
+            android:textColorLink="@color/pagePurple"
+            android:justificationMode="inter_word"
+            tools:targetApi="o" />
+    </LinearLayout>
 </ScrollView>

@@ -18,6 +18,7 @@ import androidx.fragment.app.Fragment;
 import androidx.fragment.app.FragmentManager;
 import androidx.fragment.app.FragmentPagerAdapter;
 import androidx.viewpager.widget.ViewPager;
+import hk.hku.cs.msccompsc_app.Adapter.GAActivity;
 import hk.hku.cs.msccompsc_app.MainPage.SliderAdmission;
 import hk.hku.cs.msccompsc_app.MainPage.SliderIntro;
 
@@ -123,10 +124,13 @@ public class MainActivity extends AppCompatActivity
             startActivity(intent_admission);
         } else if (id == R.id.nav_slideshow) {
 
+
         } else if (id == R.id.nav_manage) {
 
         } else if (id == R.id.nav_share) {
-
+            Log.d(TAG, "GA clicked.");
+            Intent intent_ga = new Intent(this, GAActivity.class);
+            startActivity(intent_ga);
         } else if (id == R.id.nav_send) {
 
         } else if (id == R.id.nav_curriculum){
