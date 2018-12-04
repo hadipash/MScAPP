@@ -23,11 +23,7 @@
             </intent-filter>
         </activity>
         <activity android:name=".About.MainAbout" />
-<<<<<<< Updated upstream
         <activity android:name=".Admission.MainAdmission" />
-=======
-        <activity android:name=".CurriculumActivity" />
->>>>>>> Stashed changes
     </application>
 
 </manifest>

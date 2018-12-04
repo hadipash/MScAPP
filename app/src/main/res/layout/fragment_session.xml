@@ -13,13 +13,13 @@
         android:layout_height="match_parent"
         android:textColor="@color/colorName"
         android:textSize="22sp"
-        android:textStyle="bold"
         android:layout_marginRight="8dp"
         android:layout_marginLeft="8dp"
         android:layout_marginTop="5dp"
         android:fontFamily="@font/calibrib"
         android:linksClickable="true"
         android:autoLink="all"
+        android:textColorLink="@color/pagePurple"
         android:justificationMode="inter_word"
         tools:targetApi="o" />
 </ScrollView>
