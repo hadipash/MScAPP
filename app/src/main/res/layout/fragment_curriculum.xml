@@ -6,29 +6,96 @@
     tools:context=".About.MessageFragment">
 
     <!-- TODO: Update blank fragment layout -->
-    <LinearLayout
+    <RelativeLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/programme_overview_img"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:scaleType="fitXY"
+            android:adjustViewBounds="true"
+            android:src="@mipmap/programme_overview"/>
 
         <TextView
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/programme_overview"
+            android:layout_alignLeft="@+id/programme_overview_img"
+            android:layout_alignTop="@+id/programme_overview_img"
+            android:layout_alignRight="@+id/programme_overview_img"
+            android:layout_alignBottom="@+id/programme_overview_img"
+            android:textColor="@color/colorName"
+            android:textSize="25sp"
+            android:textStyle="bold"
+            android:typeface="sans"
+            android:gravity="bottom"
+            android:justificationMode="inter_word"
+            tools:targetApi="O"
+            android:text="@string/program_overview" />
+
+        <TextView
+            android:id="@+id/programme_overview_detail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_below="@+id/programme_overview"
             android:textColor="@color/colorName"
             android:textSize="22sp"
             android:typeface="sans"
-            android:background="@color/material_grey_50"
-            android:text="@string/program_overview" />
-
+            android:lineSpacingExtra="3dp"
+            android:justificationMode="inter_word"
+            tools:targetApi="O"
+            android:text="@string/program_overview_detail"
+            />
 
         <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/colorName"
+            android:id="@+id/study_stream"
+            android:layout_below="@+id/programme_overview_detail"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:textSize="25sp"
+            android:typeface="serif"
+            android:textStyle="bold"
+            android:justificationMode="inter_word"
+            tools:targetApi="O"
+            android:text="@string/program_overview_study_stream"
+            />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/study_stream_recycler_view"
+            android:scrollbars="vertical"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
+            android:layout_below="@+id/study_stream"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            tools:context=".CurriculumActivity"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/pattern_of_study"
+            android:layout_below="@+id/study_stream_recycler_view"
+            android:layout_marginTop="10dp"
             android:textColor="@color/colorName"
-            android:textSize="20sp"
+            android:textSize="25sp"
+            android:textStyle="bold"
             android:typeface="sans"
-            android:background="@color/material_grey_50"
-            android:text="@string/program_overview_detail" />
-    </LinearLayout>
+            android:gravity="bottom"
+            android:justificationMode="inter_word"
+            tools:targetApi="O"
+            android:text="@string/pattern_of_study" />
+
+    </RelativeLayout>
 
 
 </ScrollView>

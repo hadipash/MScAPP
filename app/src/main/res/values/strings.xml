@@ -34,4 +34,16 @@
         Stepping into Asia’s next century of phenomenal growth.</string>
 
 
+<<<<<<< Updated upstream
+=======
+
+    <string name="program_overview"> Programme Overview </string>
+    <string name="program_overview_detail">
+    The MSc(CompSc) programme is a comprehensive postgraduate study programme provides advanced and in-depth learning in Computer Science.  The programme is credit unit based, with courses of both applied and fundamental nature.\n\nStudents can choose focussed streams of study or a comprehensive and diversified study in Computer Science, i.e. the General Stream.\n\nFocussed streams of study represent a cohesive collection of related courses that provides both fundamental and in-depth exposure to students in a given ICT domain.  Students can extend and deepen their knowledge in the specialization streams in Cyber Security, Multimedia Computing and Financial Computing.\n
+    </string>
+
+    <string name="program_overview_study_stream"> Study Stream </string>
+    <string name="pattern_of_study"> Pattern of Study </string>
+
+>>>>>>> Stashed changes
 </resources>

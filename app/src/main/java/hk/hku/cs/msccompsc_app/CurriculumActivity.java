@@ -1,5 +1,6 @@
 package hk.hku.cs.msccompsc_app;
 
+import android.graphics.BitmapFactory;
 import android.os.Bundle;
 
 import com.google.android.material.tabs.TabLayout;
@@ -9,6 +10,7 @@ import androidx.fragment.app.Fragment;
 import androidx.fragment.app.FragmentManager;
 import androidx.fragment.app.FragmentPagerAdapter;
 import androidx.viewpager.widget.ViewPager;
+import hk.hku.cs.msccompsc_app.Adapter.StudyStreamAdapter;
 
 public class CurriculumActivity extends AppCompatActivity {
 
@@ -33,6 +35,7 @@ public class CurriculumActivity extends AppCompatActivity {
 
 
     }
+
 
     /**
      * A {@link FragmentPagerAdapter} that returns a fragment corresponding to
@@ -71,6 +74,7 @@ public class CurriculumActivity extends AppCompatActivity {
             return 4;
         }
     }
+
 
 
 }
