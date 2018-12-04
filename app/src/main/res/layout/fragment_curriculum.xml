@@ -24,9 +24,8 @@
             android:layout_height="wrap_content"
             android:id="@+id/programme_overview"
             android:layout_alignLeft="@+id/programme_overview_img"
-            android:layout_alignTop="@+id/programme_overview_img"
-            android:layout_alignRight="@+id/programme_overview_img"
             android:layout_alignBottom="@+id/programme_overview_img"
+            android:background="#98E0E0E0"
             android:textColor="@color/colorName"
             android:textSize="25sp"
             android:textStyle="bold"
@@ -59,8 +58,8 @@
             android:textColor="@color/colorName"
             android:id="@+id/study_stream"
             android:layout_below="@+id/programme_overview_detail"
-            android:layout_marginLeft="10dp"
-            android:layout_marginRight="10dp"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
             android:textSize="25sp"
             android:typeface="serif"
             android:textStyle="bold"
@@ -86,6 +85,8 @@
             android:id="@+id/pattern_of_study"
             android:layout_below="@+id/study_stream_recycler_view"
             android:layout_marginTop="10dp"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
             android:textColor="@color/colorName"
             android:textSize="25sp"
             android:textStyle="bold"
@@ -94,6 +95,133 @@
             android:justificationMode="inter_word"
             tools:targetApi="O"
             android:text="@string/pattern_of_study" />
+
+        <TextView
+            android:id="@+id/pattern_of_study_detail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_below="@+id/pattern_of_study"
+            android:textColor="@color/colorName"
+            android:textSize="22sp"
+            android:typeface="sans"
+            android:lineSpacingExtra="3dp"
+            android:justificationMode="inter_word"
+            tools:targetApi="O"
+            android:text="@string/program_overview_detail"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/enrollment_mode"
+            android:layout_below="@+id/pattern_of_study_detail"
+            android:layout_marginTop="10dp"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:textColor="@color/colorName"
+            android:textSize="25sp"
+            android:textStyle="bold"
+            android:typeface="sans"
+            android:gravity="bottom"
+            android:justificationMode="inter_word"
+            tools:targetApi="O"
+            android:text="@string/enrollment_mode" />
+
+        <TextView
+            android:id="@+id/enrollment_mode_detail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_below="@+id/enrollment_mode"
+            android:textColor="@color/colorName"
+            android:textSize="22sp"
+            android:typeface="sans"
+            android:lineSpacingExtra="3dp"
+            tools:targetApi="O"
+            android:text="@string/enrollment_mode_detail"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/selection_of_courses"
+            android:layout_below="@+id/enrollment_mode_detail"
+            android:layout_marginTop="10dp"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:textColor="@color/colorName"
+            android:textSize="25sp"
+            android:textStyle="bold"
+            android:typeface="sans"
+            android:gravity="bottom"
+            android:justificationMode="inter_word"
+            tools:targetApi="O"
+            android:text="@string/selection_of_courses" />
+
+        <TextView
+            android:id="@+id/selection_of_courses_detail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_below="@+id/selection_of_courses"
+            android:textColor="@color/colorName"
+            android:textSize="22sp"
+            android:typeface="sans"
+            android:lineSpacingExtra="3dp"
+            android:justificationMode="inter_word"
+            tools:targetApi="O"
+            android:text="@string/selection_of_courses_detail"
+            />
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/selection_of_courses_box"
+            android:src="@mipmap/selection_of_courses_box"
+            android:layout_below="@id/selection_of_courses_detail"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:scaleType="fitXY"
+            android:adjustViewBounds="true"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/capstone_experience"
+            android:layout_below="@+id/selection_of_courses_box"
+            android:layout_marginTop="10dp"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:textColor="@color/colorName"
+            android:textSize="25sp"
+            android:textStyle="bold"
+            android:typeface="sans"
+            android:gravity="bottom"
+            android:justificationMode="inter_word"
+            tools:targetApi="O"
+            android:text="@string/capstone_experience" />
+
+        <TextView
+            android:id="@+id/capstone_experience_detail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_below="@+id/capstone_experience"
+            android:textColor="@color/colorName"
+            android:textSize="22sp"
+            android:typeface="sans"
+            android:lineSpacingExtra="3dp"
+            android:justificationMode="inter_word"
+            tools:targetApi="O"
+            android:text="@string/capstone_experience_detail"
+            />
+
 
     </RelativeLayout>
 

@@ -55,6 +55,22 @@
 
     <string name="program_overview_study_stream"> Study Stream </string>
     <string name="pattern_of_study"> Pattern of Study </string>
+    <string name="pattern_of_study_detail"> Students are required to complete 72 credits of courses selected from the syllabus which must include capstone experience. </string>
+    <string name="enrollment_mode"> Enrolment Mode </string>
+    <string name="enrollment_mode_detail"> Students can study in one of the following enrolment modes:\n
+        (a)Courses (60 credits)^ + Project \n\t\t\t\t(12 credits)\n
+            \t\ti.e. 10 Courses + Project\n\n
 
+        OR\n\n
 
+        (b)Courses (48 credits)^ + Dissertation \n\t\t\t\t(24 credits)\n
+            \t\ti.e. 8 Courses + Dissertation\n\n
+
+        ^ Each course normally carries 6 credits\n</string>
+
+    <string name="selection_of_courses"> Selection of Courses </string>
+    <string name="selection_of_courses_detail"> Students shall select courses in accordance with the regulations of the degree. To qualify as a graduate of Cyber Security, Financial Computing, or Multimedia Computing Stream, students must pass at least 4 stream specific courses (at least 24 credits in total) in the corresponding subject group, and undertake a dissertation or a project in the area of the corresponding stream. For General Stream, students can choose any discipline courses from any subject group, and undertake a dissertation or a project in any area in computer science.\n\nStudents may select no more than 2 courses (at most 12 credits in total) offered by the MSc(ECom&amp;IComp) and MSc(Eng) curricula in the Faculty of Engineering as electives.</string>
+
+    <string name="capstone_experience"> \nCapstone Experience – Dissertations and Projects </string>
+    <string name="capstone_experience_detail"> The capstone experience will definitely be beneficial for students to put together what they have learnt in the programme and demonstrate a deeper understanding of the knowledge they have acquired. Students are required to complete a dissertation (24 credits) or a project (12 credits), and attend some supplementary workshops. The dissertation / project would represent students’ consolidated capstone experience in their study.\n</string>
 </resources>
