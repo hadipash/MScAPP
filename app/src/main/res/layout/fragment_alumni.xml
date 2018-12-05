@@ -14,7 +14,7 @@ tools:context=".About.MessageFragment">
         <ImageView
             android:id="@+id/alumni_activity_img"
             android:layout_width="match_parent"
-            android:layout_height="200dp"
+            android:layout_height="100dp"
             android:scaleType="centerCrop"
             android:adjustViewBounds="true"
             android:src="@mipmap/graduates_alumni"/>
