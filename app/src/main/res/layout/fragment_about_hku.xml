@@ -21,7 +21,7 @@
         android:layout_marginRight="8dp"
         android:layout_marginLeft="8dp"
         android:layout_marginTop="5dp"
-        android:fontFamily="@font/calibrib"
+        android:fontFamily="@font/calibri"
         android:justificationMode="inter_word"
         tools:targetApi="o"
         android:text="@string/aboutHKU_fragement" />

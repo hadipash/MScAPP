@@ -37,7 +37,7 @@ public class WordsFragment extends Fragment {
         View rootview =  inflater.inflate(R.layout.fragment_words, container, false);
         mtextview = rootview.findViewById(R.id.words_text);
 
-        String htmltext = "<h4>Words from Students</h4>\n" +
+        String htmltext =
                 "<p>When you enrol in the MSc(CompSc) Programme, you gain all the advantages of a famous university with an outstanding reputation. When you leave our Programme, you will have a solid foundation in the theoretical aspect of computer science, together with hands-on technical experience in information technology, to help you begin a rewarding career.</p>\n" +
                 "<p>But a master&rsquo;s programme does not have to be the last chapter of your learning merely technical, hard-core information technology; it can serve as a springboard to other career opportunities and learning challenges. For example, many of our graduates who find themselves moving into management, may continue their studies towards an MBA degree, while others may go on to doctoral studies here at HKU or elsewhere.</p>\n" +
                 "<p>Some of our students and graduates would also like to share their experience with you.</p>\n" +

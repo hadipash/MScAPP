@@ -29,17 +29,7 @@ public class FeeFragment extends Fragment {
         View rootview =  inflater.inflate(R.layout.fragment_fee, container, false);
         mtextview = rootview.findViewById(R.id.fee_text);
 
-        String htmltext = "<article class=\"page content-item\">\n" +
-                "<div class=\"container-fluid\">\n" +
-                "    <header>\n" +
-                "        \n" +
-                "    </header>\n" +
-                "    \n" +
-                "<div class=\"orchard-layouts-root\">\n" +
-                "    \n" +
-                "\n" +
-                "<h4 class=\"section scrollspy\" id=\"fees\">Composition Fees</h4>\n" +
-                "\n" +
+        String htmltext =
                 "<div class=\"section scrollspy\" id=\"comp-fee\" style=\"background:transparent;\"><p>The composition fee for each 6-credit course is HK$13,000*. Project has a composition fee of HK$26,000 and the Dissertation has a composition fee of HK$52,000. Total composition fee for the two study modes are therefore as follows:</p>\n" +
                 "<p style=\"padding-left: 30px;\"><strong>10 courses + Project:</strong><br /><strong>(HK$13,000 x 10) + (HK$26,000) = HK$156,000</strong></p>\n" +
                 "<p style=\"padding-left: 30px;\"><strong>8 Courses + Dissertation:<br /><strong>(HK$13,000 x 8) + (HK$52,000) = HK$156,000</strong></strong></p>\n" +
@@ -57,12 +47,7 @@ public class FeeFragment extends Fragment {
                 "<p style=\"padding-left: 30px;\">PRC students who have successfully applied and been offered a place in the Master of Science in Computer Science as full-time students in Hong Kong have an opportunity to have their composition fees reduced if they apply and are awarded The China Postgraduate Scholarships for Computer Science.</p>\n" +
                 "<p style=\"padding-left: 30px;\">The maximum number of scholarships for 2019-20 is thirty, with a maximum value of HK$30,000 each.</p>\n" +
                 "<p style=\"padding-left: 30px;\">The scholarships shall be used to meet part of the composition fees for a full-time programme of studies leading to the degree of Master of Science in Computer Science.</p>\n" +
-                "<p style=\"padding-left: 30px;\">The scholarships shall be awarded mainly on the basis of academic merits.</p>\n" +
-                "</div>\n" +
-                "\n" +
-                "</div>\n" +
-                "</div>\n" +
-                "</article>\n" ;
+                "<p style=\"padding-left: 30px;\">The scholarships shall be awarded mainly on the basis of academic merits.</p>\n" ;
 
         mtextview.setText(Html.fromHtml(htmltext));
 
