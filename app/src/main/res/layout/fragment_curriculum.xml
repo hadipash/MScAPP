@@ -13,9 +13,9 @@
 
         <ImageView
             android:id="@+id/programme_overview_img"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:scaleType="fitXY"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:scaleType="centerCrop"
             android:adjustViewBounds="true"
             android:src="@mipmap/programme_overview"/>
 
@@ -25,9 +25,11 @@
             android:id="@+id/programme_overview"
             android:layout_alignLeft="@+id/programme_overview_img"
             android:layout_alignBottom="@+id/programme_overview_img"
+            android:layout_marginLeft="10dp"
+            android:layout_marginBottom="10dp"
             android:background="#98E0E0E0"
             android:textColor="@color/colorName"
-            android:textSize="25sp"
+            android:textSize="30sp"
             android:textStyle="bold"
             android:typeface="sans"
             android:gravity="bottom"
@@ -36,13 +38,29 @@
             android:text="@string/program_overview" />
 
         <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/colorName"
+            android:id="@+id/programme_overview_title"
+            android:layout_below="@+id/programme_overview_img"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:textSize="25sp"
+            android:typeface="serif"
+            android:textStyle="bold"
+            android:justificationMode="inter_word"
+            tools:targetApi="O"
+            android:text="@string/program_overview"
+            />
+
+        <TextView
             android:id="@+id/programme_overview_detail"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="10dp"
             android:layout_marginLeft="10dp"
             android:layout_marginRight="10dp"
-            android:layout_below="@+id/programme_overview"
+            android:layout_below="@+id/programme_overview_title"
             android:textColor="@color/colorName"
             android:textSize="22sp"
             android:typeface="sans"
@@ -76,7 +94,7 @@
             android:layout_below="@+id/study_stream"
             android:layout_marginLeft="10dp"
             android:layout_marginRight="10dp"
-            tools:context=".CurriculumActivity"
+            tools:context=".Curriculum.CurriculumActivity"
             />
 
         <TextView

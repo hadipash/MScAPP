@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".About.MessageFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/alumni_association_img"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:scaleType="centerCrop"
+            android:adjustViewBounds="true"
+            android:src="@mipmap/graduates_alumni"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/alumni_association_title"
+            android:layout_alignLeft="@+id/alumni_association_img"
+            android:layout_alignBottom="@+id/alumni_association_img"
+            android:layout_marginLeft="10dp"
+            android:layout_marginBottom="10dp"
+            android:background="#98E0E0E0"
+            android:textColor="@color/colorName"
+            android:textSize="25sp"
+            android:textStyle="bold"
+            android:typeface="sans"
+            android:gravity="bottom"
+            tools:targetApi="O"
+            android:text="@string/alumni_association" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/colorName"
+            android:id="@+id/alumni_association"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:textSize="25sp"
+            android:typeface="serif"
+            android:textStyle="bold"
+            android:layout_below="@+id/alumni_association_img"
+            android:justificationMode="inter_word"
+            tools:targetApi="O"
+            android:text="@string/alumni_association"
+            />
+
+        <ImageView
+            android:id="@+id/alumni_association_photo"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:layout_marginTop="10dp"
+            android:layout_below="@+id/alumni_association"
+            android:src="@mipmap/grad_dinner2017_2_association_fragment"/>
+
+        <TextView
+            android:id="@+id/programme_overview_detail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_below="@+id/alumni_association_photo"
+            android:textColor="@color/colorName"
+            android:textSize="22sp"
+            android:typeface="sans"
+            android:lineSpacingExtra="3dp"
+            android:justificationMode="inter_word"
+            tools:targetApi="O"
+            android:text="@string/alumni_association_detail"
+            />
+
+
+
+    </RelativeLayout>
+
+
+</ScrollView>

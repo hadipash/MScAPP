@@ -1,4 +1,4 @@
-package hk.hku.cs.msccompsc_app.Adapter;
+package hk.hku.cs.msccompsc_app.Curriculum;
 
 import android.graphics.Bitmap;
 import android.view.LayoutInflater;

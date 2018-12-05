@@ -29,12 +29,15 @@
             android:name=".Admission.MainAdmission"
             android:parentActivityName=".MainActivity" />
         <activity
-            android:name=".CurriculumActivity"
+            android:name=".Curriculum.CurriculumActivity"
             android:parentActivityName=".MainActivity"></activity>
-        <activity android:name=".Adapter.GAActivity"></activity>
         <activity
-            android:name=".Adapter.AlumniNewsPage"
-            android:parentActivityName=".Adapter.GAActivity">
+            android:name=".Curriculum.GAActivity"
+            android:parentActivityName=".MainActivity" >
+        </activity>
+        <activity
+            android:name=".Curriculum.AlumniNewsPage"
+            android:parentActivityName=".Curriculum.GAActivity">
 
         </activity>
     </application>

@@ -1,8 +1,7 @@
-package hk.hku.cs.msccompsc_app.Adapter;
+package hk.hku.cs.msccompsc_app.Curriculum;
 
 import android.graphics.BitmapFactory;
 import android.os.Bundle;
-import android.util.Log;
 import android.widget.ImageView;
 import android.widget.TextView;
 

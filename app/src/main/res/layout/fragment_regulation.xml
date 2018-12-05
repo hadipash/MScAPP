@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".About.MessageFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/regulation_img"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:scaleType="fitXY"
+            android:adjustViewBounds="true"
+            android:src="@mipmap/regulation"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/regulation_and_syllabus"
+            android:layout_alignLeft="@+id/regulation_img"
+            android:layout_alignBottom="@+id/regulation_img"
+            android:layout_marginLeft="10dp"
+            android:layout_marginBottom="10dp"
+            android:background="#98E0E0E0"
+            android:textColor="@color/colorName"
+            android:textSize="30sp"
+            android:textStyle="bold"
+            android:typeface="sans"
+            android:gravity="bottom"
+            android:justificationMode="inter_word"
+            tools:targetApi="O"
+            android:text="@string/regulation_and_syllabus" />
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/colorName"
+            android:id="@+id/regulation"
+            android:layout_below="@+id/regulation_and_syllabus"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:textSize="25sp"
+            android:typeface="serif"
+            android:textStyle="bold"
+            android:justificationMode="inter_word"
+            tools:targetApi="O"
+            android:text="@string/regulation"
+            />
+
+        <TextView
+            android:id="@+id/regulation_detail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_below="@+id/regulation"
+            android:textColor="@color/colorName"
+            android:textSize="22sp"
+            android:typeface="sans"
+            android:lineSpacingExtra="3dp"
+            android:justificationMode="inter_word"
+            tools:targetApi="O"
+
+            />
+
+
+    </RelativeLayout>
+
+
+</ScrollView>

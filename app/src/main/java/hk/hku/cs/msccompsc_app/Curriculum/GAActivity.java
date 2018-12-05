@@ -1,19 +1,17 @@
-package hk.hku.cs.msccompsc_app;
-
-import android.graphics.BitmapFactory;
-import android.os.Bundle;
-
-import com.google.android.material.tabs.TabLayout;
+package hk.hku.cs.msccompsc_app.Curriculum;
 
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.fragment.app.Fragment;
 import androidx.fragment.app.FragmentManager;
 import androidx.fragment.app.FragmentPagerAdapter;
 import androidx.viewpager.widget.ViewPager;
+import hk.hku.cs.msccompsc_app.R;
 
-public class CurriculumActivity extends AppCompatActivity {
+import android.os.Bundle;
 
-    private static final String TAG = "CurriculumActivity";
+import com.google.android.material.tabs.TabLayout;
+
+public class GAActivity extends AppCompatActivity {
 
     private ViewPager mViewPager;
     private SectionsPagerAdapter mSectionsPagerAdapter;
@@ -21,30 +19,26 @@ public class CurriculumActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_curriculum);
-
+        setContentView(R.layout.activity_ga);
 
         mSectionsPagerAdapter = new SectionsPagerAdapter(getSupportFragmentManager());
-        mViewPager = findViewById(R.id.container);
+        mViewPager = findViewById(R.id.container_ga);
         mViewPager.setAdapter(mSectionsPagerAdapter);
 
-        TabLayout tabLayout = findViewById(R.id.tabs);
+        TabLayout tabLayout = findViewById(R.id.tabs_ga);
         mViewPager.addOnPageChangeListener(new TabLayout.TabLayoutOnPageChangeListener(tabLayout));
         tabLayout.addOnTabSelectedListener(new TabLayout.ViewPagerOnTabSelectedListener(mViewPager));
 
 
     }
 
-
     /**
      * A {@link FragmentPagerAdapter} that returns a fragment corresponding to
      * one of the sections/tabs/pages.
      */
     public class SectionsPagerAdapter extends FragmentPagerAdapter {
-        private static final int OVERVIEW_SECTION = 0;
-        private static final int COURSE_SECTION = 1;
-        private static final int DURATION_SECTION = 2;
-        private static final int SYLLIBUS_SECTION = 3;
+        private static final int ASSOCIATION_SECTION = 0;
+        private static final int ACTIVITY_SECTION = 1;
 
         SectionsPagerAdapter(FragmentManager fm) {
             super(fm);
@@ -53,27 +47,19 @@ public class CurriculumActivity extends AppCompatActivity {
         @Override
         public Fragment getItem(int position) {
             switch (position) {
-                case OVERVIEW_SECTION:
-                    return new OverviewFragment();
-//                case COURSE_SECTION:
-//                    return new CourseFragment();
-//                case DURATION_SECTION:
-//                    return new DurationFragment();
-//                case SYLLIBUS_SECTION:
-//                    return new SyllbusFragment();
-
+                case ASSOCIATION_SECTION:
+                    return new AlumniAssociationFragment();
+                case ACTIVITY_SECTION:
+                    return new AlumniFragment();
             }
-            return new OverviewFragment();
+            return new AlumniFragment();
             // return is required
 
         }
 
         @Override
         public int getCount() {
-            return 4;
+            return 2;
         }
     }
-
-
-
 }

@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".About.MessageFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/duration_class_img"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:scaleType="fitXY"
+            android:adjustViewBounds="true"
+            android:src="@mipmap/duration_and_class_schedule"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/duration_img_title"
+            android:layout_alignLeft="@+id/duration_class_img"
+            android:layout_alignBottom="@+id/duration_class_img"
+            android:layout_marginLeft="10dp"
+            android:layout_marginBottom="10dp"
+            android:background="#98E0E0E0"
+            android:textColor="@color/colorName"
+            android:textSize="30sp"
+            android:textStyle="bold"
+            android:typeface="sans"
+            android:gravity="bottom"
+            android:justificationMode="inter_word"
+            tools:targetApi="O"
+            android:text="@string/duration_img_title" />
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/colorName"
+            android:id="@+id/duration_of_study"
+            android:layout_below="@+id/duration_img_title"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:textSize="25sp"
+            android:typeface="serif"
+            android:textStyle="bold"
+            android:justificationMode="inter_word"
+            tools:targetApi="O"
+            android:text="@string/duration_of_study"
+            />
+
+        <TextView
+            android:id="@+id/duration_of_study_detail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_below="@+id/duration_of_study"
+            android:textColor="@color/colorName"
+            android:textSize="22sp"
+            android:typeface="sans"
+            android:lineSpacingExtra="3dp"
+            android:justificationMode="inter_word"
+            tools:targetApi="O"
+            android:text="@string/duration_of_study_detail"
+            />
+
+
+    </RelativeLayout>
+
+
+</ScrollView>

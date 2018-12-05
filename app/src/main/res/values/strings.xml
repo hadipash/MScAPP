@@ -73,4 +73,19 @@
 
     <string name="capstone_experience"> \nCapstone Experience – Dissertations and Projects </string>
     <string name="capstone_experience_detail"> The capstone experience will definitely be beneficial for students to put together what they have learnt in the programme and demonstrate a deeper understanding of the knowledge they have acquired. Students are required to complete a dissertation (24 credits) or a project (12 credits), and attend some supplementary workshops. The dissertation / project would represent students’ consolidated capstone experience in their study.\n</string>
+    <string name="courses">Courses</string>
+    <string name="msc_courses">MSc(CompSc) Courses</string>
+    <string name="msc_courses_detail">The following is a list of courses offered for the MSc(CompSc) curriculum by the Department of Computer Science.  The courses, both in terms of range and syllabus, are updated and revised continuously by the Programme Committee and the Department.  Any revision requires University’s approval.  The list of courses is also subject to change because occasionally we may decide not to offer a particular course in one year or to add some new ones, based on the findings of the annual curriculum review.  Please refer to our website for updated information.</string>
+    <string name="duration_img_title">Duration of Study &amp; Class Schedule</string>
+    <string name="duration_of_study">Duration of Study</string>
+    <string name="duration_of_study_detail">The MSc(CompSc) programme is offered in both full&#8211;time and part&#8211;time modes.\n\nThere are 3 semesters in an academic year, i.e. semester 1: September &#8211;&#8211; December, semester 2: January &#8211;&#8211; May and the summer semester: June &#8211;&#8211; August.\n\nPart&#8211;time: 2&#8211;3 years\n\nFull&#8211;time: 1&#8211;2 years</string>
+    <string name="class_schedule">Class Schedule</string>
+    <string name="class_schedule_detail">Classes are usually conducted in weekday evenings from 7:00 p.m., or during weekends.  Some courses will be offered mainly for full-time students in weekday daytime.</string>
+    <string name="regulation_and_syllabus">Regulations and Syllabus</string>
+    <string name="regulation">REGULATIONS</string>
+    <string name="alumni_activities">Alumni Activities</string>
+    <string name="alumni_association">MSc(CompSc) Alumni Association</string>
+    <string name="alumni_association_detail">HKU is a journey, not a destination. When you left HKU, you are not alone for the rest of your life because you have the alumni association, your powerful backing forever.\n\mThe MSc(CompSc) Alumni Association strengthens the bonding and communication among our graduates, facilitates resources sharing and thus fulfills the responsibilities of being an HKU alumni. We aim at practicing the motto "Sapience and Virtue", working in unity, helping each other, contributing to our alma mater and serving the community.\n\nOur Alumni Association is not only the heritage of HKU, but also the wealth throughout our whole lives. It actively recruits not just new graduates each year. It also invites new and current students to join the big family before their graduation. Currently, we have bases throughout China, including Hong Kong, Beijing, Shanghai, Shenzhen and Chengdu. Every student who has studied the MSc(CompSc) programme can find their own home.\n\n<a href="http://www.hkumsccs.com" target="_blank">http://www.hkumsccs.com</a></string>
+
+
 </resources>
