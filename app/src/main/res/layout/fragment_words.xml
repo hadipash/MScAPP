@@ -3,14 +3,52 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/material_orange_100"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@drawable/grid_bg"
     tools:context=".Admission.WordsFragment">
 
-    <!-- TODO: Update blank fragment layout -->
     <androidx.appcompat.widget.LinearLayoutCompat
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="0.5dp">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="70dp"
+                android:src="@drawable/student_word"
+                android:contentDescription="TODO"
+                android:id="@+id/student_word"
+                android:outlineAmbientShadowColor="@color/material_white_1000"
+                android:scaleType="centerCrop"/>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                app:cardBackgroundColor="#4d000000"
+                app:cardCornerRadius="5dp"
+                android:layout_alignLeft="@+id/student_word"
+                android:layout_alignBottom="@+id/student_word"
+                android:layout_marginLeft="10dp"
+                android:layout_marginBottom="10dp"
+                app:cardElevation="0dp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="Composition Fees"
+                    android:textColor="@color/material_white_1000"
+                    android:fontFamily="@font/calibri"
+                    android:textSize="25sp"
+                    android:textStyle="bold" />
+
+            </androidx.cardview.widget.CardView>
+        </RelativeLayout>
+
 
         <TextView
             android:id="@+id/words_text"
@@ -21,7 +59,7 @@
             android:layout_marginRight="8dp"
             android:layout_marginLeft="8dp"
             android:layout_marginTop="5dp"
-            android:fontFamily="@font/calibrib"
+            android:fontFamily="@font/calibri"
             android:linksClickable="true"
             android:autoLink="all"
             android:textColorLink="@color/pagePurple"
@@ -37,5 +75,6 @@
             android:scrollbars="vertical"
             tools:context=".Admission.WordsFragment">
         </androidx.recyclerview.widget.RecyclerView>
+
     </androidx.appcompat.widget.LinearLayoutCompat>
 </ScrollView>

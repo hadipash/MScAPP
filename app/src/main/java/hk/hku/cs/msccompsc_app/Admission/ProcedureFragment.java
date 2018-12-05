@@ -31,17 +31,7 @@ public class ProcedureFragment extends Fragment {
         mtextview = rootview.findViewById(R.id.procedures_text);
         mtextview2 = rootview.findViewById(R.id.procedures_text2);
 
-        String htmltext1 = "<article class=\"page content-item\">\n" +
-                "<div class=\"container-fluid\">\n" +
-                "    <header>\n" +
-                "        \n" +
-                "    </header>\n" +
-                "    \n" +
-                "<div class=\"orchard-layouts-root\">\n" +
-                "    \n" +
-                "\n" +
-                "<h4 class=\"section scrollspy\" id=\"app-proc\" style=\"background:transparent;\">Application Procedures</h4>\n" +
-                "\n" +
+        String htmltext1 =
                 "<div class=\"section scrollspy\" id=\"how-apply\" style=\"background:transparent;\"><p>Applicants can submit their application via the online application system by clicking the following button.</p>\n" +
                 "<p style=\"text-align: center;\"><a target=\"_blank\" href=\"http://www.aal.hku.hk/tpg/programme/master-science-computer-science\" class=\"waves-effect waves-light btn-large purple z-depth-5\">Online Application</a></p>\n" +
                 "<p>The following supporting documents should be uploaded to the online application system before the application deadline or expiry of your application account (which is valid for four weeks only), whichever is earlier:</p>\n" +

@@ -4,7 +4,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    android:background="@color/material_orange_100"
+    android:background="@drawable/grid_bg"
     tools:context=".Admission.RequireFragment">
 
 <!-- TODO: Update blank fragment layout -->
@@ -20,9 +20,10 @@
 
             <ImageView
                 android:layout_width="match_parent"
-                android:layout_height="60dp"
+                android:layout_height="70dp"
                 android:src="@drawable/admit_require"
                 android:contentDescription="TODO"
+                android:id="@+id/admit_require"
                 android:outlineAmbientShadowColor="@color/material_white_1000"
                 android:scaleType="centerCrop"/>
 
@@ -31,6 +32,10 @@
                 android:layout_height="30dp"
                 app:cardBackgroundColor="#4d000000"
                 app:cardCornerRadius="5dp"
+                android:layout_alignLeft="@+id/admit_require"
+                android:layout_alignBottom="@+id/admit_require"
+                android:layout_marginLeft="10dp"
+                android:layout_marginBottom="10dp"
                 app:cardElevation="0dp">
 
                 <TextView
@@ -38,10 +43,9 @@
                     android:layout_height="match_parent"
                     android:text="Admission Requirement"
                     android:textColor="@color/material_white_1000"
-                    android:fontFamily="@font/calibrib"
+                    android:fontFamily="@font/calibri"
                     android:textSize="25sp"
-                    android:textStyle="bold"
-                    android:gravity="center"/>
+                    android:textStyle="bold" />
 
             </androidx.cardview.widget.CardView>
 
@@ -57,7 +61,7 @@
             android:layout_marginRight="8dp"
             android:layout_marginLeft="8dp"
             android:layout_marginTop="5dp"
-            android:fontFamily="@font/calibrib"
+            android:fontFamily="@font/calibri"
             android:linksClickable="true"
             android:autoLink="all"
             android:textColorLink="@color/pagePurple"

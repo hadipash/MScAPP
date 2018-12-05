@@ -26,23 +26,10 @@ public class SessionFragment extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
-        View rootview =  inflater.inflate(R.layout.fragment_fee, container, false);
-        mtextview = rootview.findViewById(R.id.fee_text);
+        View rootview =  inflater.inflate(R.layout.fragment_session, container, false);
+        mtextview = rootview.findViewById(R.id.session_text);
 
-        String htmltext = "<article class=\"page content-item\">\n" +
-                "<div class=\"container-fluid\">\n" +
-                "    <header>\n" +
-                "        \n" +
-                "    </header>\n" +
-                "    \n" +
-                "<div class=\"orchard-layouts-root\">\n" +
-                "    \n" +
-                "\n" +
-                "<div class=\"table\">\n" +
-                "\n" +
-                "<div class=\"row\">\n" +
-                "<div class=\" col m12\">\n" +
-                "<h4>Information Sessions</h4>\n" +
+        String htmltext =
                 "<p>Join us at the information sessions, and find out if the Master of Science in Computer Science Programme is the right fit for your career goals. Information Sessions include a programme overview and Q&amp;A, plus the opportunity to talk informally with Programme Director and staff. Potential applicants are welcome.</p>\n" +
                 "<p>Information sessions will be organized in Hong Kong and Mainland China. Details of these information sessions will be announced on our website and/or advertised online and in major local newspapers.</p>\n" +
                 "<p>Details of the information session:</p>\n" +
@@ -85,13 +72,7 @@ public class SessionFragment extends Fragment {
                 "        </table>\n" +
                 "        <br />\n" +
                 "</div>\n" +
-                "<p id=\"infoLink\" style=\"display:none;\">Please check the <a href=\"/Admission/info-session\">Information Session</a> part for details.</p>\n" +
-                "</article></div></div></div>\n" +
-                "</div>\n" +
-                "\n" +
-                "</div>\n" +
-                "</div>\n" +
-                "</article>\n" ;
+                "<p id=\"infoLink\" style=\"display:none;\">Please check the <a href=\"/Admission/info-session\">Information Session</a> part for details.</p>\n" ;
 
 
         mtextview.setText(Html.fromHtml(htmltext));
