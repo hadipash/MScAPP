@@ -20,7 +20,9 @@
             android:id="@+id/nav_graduate_alumni"
             android:title="Graduate and Alumni" />
 
-
+        <item
+            android:id="@+id/nav_contact_us"
+            android:title="Contact Us" />
     </group>
 
 </menu>
