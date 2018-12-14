@@ -33,7 +33,7 @@ public class MainActivity extends AppCompatActivity
         implements NavigationView.OnNavigationItemSelectedListener {
     private SectionsPagerAdapter mSectionsPagerAdapter;
     private ViewPager mViewPager;
-    private int currentPage = 0;
+    private final static int PAGENUM = 2;
     private static final String TAG = "MainActivity";
 
     @Override
@@ -53,7 +53,7 @@ public class MainActivity extends AppCompatActivity
         handler.postDelayed(new Runnable() {
             @Override
             public void run() {
-                mViewPager.setCurrentItem(currentPage++ % 2, true);
+                mViewPager.setCurrentItem((mViewPager.getCurrentItem() + 1) % PAGENUM, true);
                 handler.postDelayed(this, 4000);
             }
         }, 4000);

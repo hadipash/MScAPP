@@ -17,7 +17,7 @@
         android:layout_height="100dp"
         android:layout_marginTop="20dp"
         android:background="#4d000000"
-        android:visibility="invisible">
+        android:visibility="gone">
 
         <ImageView
             android:id="@+id/msc_logo"
@@ -69,6 +69,6 @@
         android:layout_centerHorizontal="true"
         android:layout_alignParentBottom="true"
         android:alpha="0.9"
-        android:visibility="invisible"/>
+        android:visibility="gone"/>
 
 </RelativeLayout>

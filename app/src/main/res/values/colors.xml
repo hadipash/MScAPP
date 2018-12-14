@@ -309,6 +309,15 @@
     <color name="material_blue_grey_800">#37474F</color>
     <color name="material_blue_grey_900">#263238</color>
 
-
+    <color name="CS_table_row">#E1BEE7</color>
+    <color name="CS_table_head">#EA80FC</color>
+    <color name="FC_table_head">#40c4ff</color>
+    <color name="FC_table_row">#84ffff</color>
+    <color name="MC_table_head">#ffff00</color>
+    <color name="MC_table_row">#ffff8d</color>
+    <color name="OC_table_head">#bdbdbd</color>
+    <color name="OC_table_row">#eeeeee</color>
+    <color name="CE_table_head">#ffa726</color>
+    <color name="CE_table_row">#ffcc80</color>
 
 </resources>

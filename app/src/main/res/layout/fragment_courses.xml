@@ -3,56 +3,55 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".About.MessageFragment">
+    tools:context=".Curriculum.CurriculumActivity">
 
     <!-- TODO: Update blank fragment layout -->
-    <RelativeLayout
+    <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="vertical">
 
-        <ImageView
-            android:id="@+id/courses_img"
+        <RelativeLayout
             android:layout_width="match_parent"
-            android:layout_height="100dp"
-            android:scaleType="centerCrop"
-            android:adjustViewBounds="true"
-            android:src="@mipmap/courses"/>
+            android:layout_height="wrap_content">
 
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:id="@+id/courses"
-            android:layout_alignLeft="@+id/courses_img"
-            android:layout_alignBottom="@+id/courses_img"
-            android:layout_marginLeft="10dp"
-            android:layout_marginBottom="10dp"
-            android:background="#98E0E0E0"
-            android:textColor="@color/colorName"
-            android:textSize="30sp"
-            android:textStyle="bold"
-            android:typeface="sans"
-            android:gravity="bottom"
-            android:justificationMode="inter_word"
-            tools:targetApi="O"
-            android:text="@string/courses" />
+            <ImageView
+                android:id="@+id/courses_img"
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:scaleType="centerCrop"
+                android:adjustViewBounds="true"
+                android:src="@mipmap/courses"/>
 
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/courses"
+                android:layout_alignStart="@+id/courses_img"
+                android:layout_alignBottom="@+id/courses_img"
+                android:layout_marginStart="10dp"
+                android:layout_marginBottom="10dp"
+                android:background="#98E0E0E0"
+                android:textColor="@color/colorName"
+                android:textSize="30sp"
+                android:textStyle="bold"
+                android:typeface="sans"
+                android:gravity="bottom"
+                android:text="@string/courses" />
+
+        </RelativeLayout>
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:textColor="@color/colorName"
             android:id="@+id/msc_courses"
-            android:layout_below="@+id/courses_img"
             android:paddingLeft="10dp"
             android:paddingRight="10dp"
             android:textSize="25sp"
             android:typeface="serif"
             android:textStyle="bold"
-            android:justificationMode="inter_word"
-            tools:targetApi="O"
-            android:text="@string/msc_courses"
-            />
+            android:text="@string/msc_courses" />
 
         <TextView
             android:id="@+id/msc_courses_detail"
@@ -60,18 +59,1891 @@
             android:layout_height="wrap_content"
             android:layout_marginLeft="10dp"
             android:layout_marginRight="10dp"
-            android:layout_below="@+id/msc_courses"
             android:textColor="@color/colorName"
             android:textSize="22sp"
             android:typeface="sans"
             android:lineSpacingExtra="3dp"
             android:justificationMode="inter_word"
             tools:targetApi="O"
-            android:text="@string/msc_courses_detail"
-            />
+            android:text="@string/msc_courses_detail" />
 
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="1dp"
+            android:background="#FFFFFF"
+            android:stretchColumns="1"
+            android:shrinkColumns="1"
+            android:layout_marginTop="10dp">
 
-    </RelativeLayout>
+            <TableRow>
+                <TextView
+                    android:text="@string/cyber_security"
+                    android:textSize="30sp"
+                    android:textColor="@color/colorName"
+                    android:layout_span="2"
+                    android:gravity="center_horizontal"
+                    android:background="@drawable/cs_head_bg"/>
+            </TableRow>
 
+            <TableRow
+                android:background="@drawable/cs_row_bg">
+                <TextView
+                    android:text="COMP7806"
+                    android:textSize="20sp"
+                    android:textColor="@color/colorName"
+                    android:paddingHorizontal="1dp"
+                    tools:targetApi="o" />
+
+                <RelativeLayout
+                    android:background="@drawable/cs_row_right_item_bg"
+                    android:paddingTop="1dp"
+                    android:paddingEnd="1dp"
+                    android:paddingBottom="1dp"
+                    android:paddingStart="2dp"
+                    android:onClick="toggleContent">
+
+                    <TextView
+                        android:id="@+id/course_name1"
+                        android:layout_height="wrap_content"
+                        android:layout_width="280dp"
+                        android:text="@string/COMP7806"
+                        android:textSize="20sp"
+                        android:textColor="@color/colorName" />
+
+                    <TextView
+                        android:layout_toEndOf="@id/course_name1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/arrow_down"
+                        android:textSize="20sp"
+                        android:textColor="@color/colorName"/>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/course_name1"
+                        android:text="@string/COMP7806_description"
+                        android:textSize="18sp"
+                        android:textColor="@color/colorName"
+                        android:visibility="gone"
+                        android:justificationMode="inter_word"
+                        tools:targetApi="O" />
+
+                </RelativeLayout>
+            </TableRow>
+
+            <TableRow
+                android:background="@drawable/cs_row_bg">
+                <TextView
+                    android:text="COMP7901"
+                    android:textSize="20sp"
+                    android:textColor="@color/colorName"
+                    android:paddingHorizontal="1dp"
+                    tools:targetApi="o" />
+
+                <RelativeLayout
+                    android:background="@drawable/cs_row_right_item_bg"
+                    android:paddingTop="1dp"
+                    android:paddingEnd="1dp"
+                    android:paddingBottom="1dp"
+                    android:paddingStart="2dp"
+                    android:onClick="toggleContent">
+
+                    <TextView
+                        android:id="@+id/course_name2"
+                        android:layout_height="wrap_content"
+                        android:layout_width="280dp"
+                        android:text="@string/COMP7901"
+                        android:textSize="20sp"
+                        android:textColor="@color/colorName" />
+
+                    <TextView
+                        android:layout_toEndOf="@id/course_name2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/arrow_down"
+                        android:textSize="20sp"
+                        android:textColor="@color/colorName"/>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/course_name2"
+                        android:text="@string/COMP7901_description"
+                        android:textSize="18sp"
+                        android:textColor="@color/colorName"
+                        android:visibility="gone"
+                        android:justificationMode="inter_word"
+                        tools:targetApi="O" />
+
+                </RelativeLayout>
+            </TableRow>
+
+            <TableRow
+                android:background="@drawable/cs_row_bg">
+                <TextView
+                    android:text="COMP7903"
+                    android:textSize="20sp"
+                    android:textColor="@color/colorName"
+                    android:paddingHorizontal="1dp"
+                    tools:targetApi="o" />
+
+                <RelativeLayout
+                    android:background="@drawable/cs_row_right_item_bg"
+                    android:paddingTop="1dp"
+                    android:paddingEnd="1dp"
+                    android:paddingBottom="1dp"
+                    android:paddingStart="2dp"
+                    android:onClick="toggleContent">
+
+                    <TextView
+                        android:id="@+id/course_name3"
+                        android:layout_height="wrap_content"
+                        android:layout_width="280dp"
+                        android:text="@string/COMP7903"
+                        android:textSize="20sp"
+                        android:textColor="@color/colorName" />
+
+                    <TextView
+                        android:layout_toEndOf="@id/course_name3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/arrow_down"
+                        android:textSize="20sp"
+                        android:textColor="@color/colorName"/>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/course_name3"
+                        android:text="@string/COMP7903_description"
+                        android:textSize="18sp"
+                        android:textColor="@color/colorName"
+                        android:visibility="gone"
+                        android:justificationMode="inter_word"
+                        tools:targetApi="O" />
+
+                </RelativeLayout>
+            </TableRow>
+
+            <TableRow
+                android:background="@drawable/cs_row_bg">
+                <TextView
+                    android:text="COMP7904"
+                    android:textSize="20sp"
+                    android:textColor="@color/colorName"
+                    android:paddingHorizontal="1dp"
+                    tools:targetApi="o" />
+
+                <RelativeLayout
+                    android:background="@drawable/cs_row_right_item_bg"
+                    android:paddingTop="1dp"
+                    android:paddingEnd="1dp"
+                    android:paddingBottom="1dp"
+                    android:paddingStart="2dp"
+                    android:onClick="toggleContent">
+
+                    <TextView
+                        android:id="@+id/course_name4"
+                        android:layout_height="wrap_content"
+                        android:layout_width="280dp"
+                        android:text="@string/COMP7904"
+                        android:textSize="20sp"
+                        android:textColor="@color/colorName" />
+
+                    <TextView
+                        android:layout_toEndOf="@id/course_name4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/arrow_down"
+                        android:textSize="20sp"
+                        android:textColor="@color/colorName"/>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/course_name4"
+                        android:text="@string/COMP7904_description"
+                        android:textSize="18sp"
+                        android:textColor="@color/colorName"
+                        android:visibility="gone"
+                        android:justificationMode="inter_word"
+                        tools:targetApi="O" />
+
+                </RelativeLayout>
+            </TableRow>
+
+            <TableRow
+                android:background="@drawable/cs_row_bg">
+                <TextView
+                    android:text="COMP7905"
+                    android:textSize="20sp"
+                    android:textColor="@color/colorName"
+                    android:paddingHorizontal="1dp"
+                    tools:targetApi="o" />
+
+                <RelativeLayout
+                    android:background="@drawable/cs_row_right_item_bg"
+                    android:paddingTop="1dp"
+                    android:paddingEnd="1dp"
+                    android:paddingBottom="1dp"
+                    android:paddingStart="2dp"
+                    android:onClick="toggleContent">
+
+                    <TextView
+                        android:id="@+id/course_name5"
+                        android:layout_height="wrap_content"
+                        android:layout_width="280dp"
+                        android:text="@string/COMP7905"
+                        android:textSize="20sp"
+                        android:textColor="@color/colorName" />
+
+                    <TextView
+                        android:layout_toEndOf="@id/course_name5"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/arrow_down"
+                        android:textSize="20sp"
+                        android:textColor="@color/colorName"/>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/course_name5"
+                        android:text="@string/COMP7905_description"
+                        android:textSize="18sp"
+                        android:textColor="@color/colorName"
+                        android:visibility="gone"
+                        android:justificationMode="inter_word"
+                        tools:targetApi="O" />
+
+                </RelativeLayout>
+            </TableRow>
+
+            <TableRow
+                android:background="@drawable/cs_row_bg">
+                <TextView
+                    android:text="COMP7906"
+                    android:textSize="20sp"
+                    android:textColor="@color/colorName"
+                    android:paddingHorizontal="1dp"
+                    tools:targetApi="o" />
+
+                <RelativeLayout
+                    android:background="@drawable/cs_row_right_item_bg"
+                    android:paddingTop="1dp"
+                    android:paddingEnd="1dp"
+                    android:paddingBottom="1dp"
+                    android:paddingStart="2dp"
+                    android:onClick="toggleContent">
+
+                    <TextView
+                        android:id="@+id/course_name6"
+                        android:layout_height="wrap_content"
+                        android:layout_width="280dp"
+                        android:text="@string/COMP7906"
+                        android:textSize="20sp"
+                        android:textColor="@color/colorName" />
+
+                    <TextView
+                        android:layout_toEndOf="@id/course_name6"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/arrow_down"
+                        android:textSize="20sp"
+                        android:textColor="@color/colorName"/>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/course_name6"
+                        android:text="@string/COMP7906_description"
+                        android:textSize="18sp"
+                        android:textColor="@color/colorName"
+                        android:visibility="gone"
+                        android:justificationMode="inter_word"
+                        tools:targetApi="O" />
+
+                </RelativeLayout>
+            </TableRow>
+
+            <TableRow>
+                <TextView
+                    android:text="Financial Computing"
+                    android:textSize="30sp"
+                    android:textColor="@color/colorName"
+                    android:layout_span="2"
+                    android:gravity="center_horizontal"
+                    android:background="@drawable/fc_head_bg"/>
+            </TableRow>
+
+            <TableRow
+                android:background="@drawable/fc_row_bg">
+                <TextView
+                    android:text="COMP7103"
+                    android:textSize="20sp"
+                    android:textColor="@color/colorName"
+                    android:paddingHorizontal="1dp"
+                    tools:targetApi="o" />
+
+                <RelativeLayout
+                    android:background="@drawable/fc_row_right_item_bg"
+                    android:paddingTop="1dp"
+                    android:paddingEnd="1dp"
+                    android:paddingBottom="1dp"
+                    android:paddingStart="2dp"
+                    android:onClick="toggleContent">
+
+                    <TextView
+                        android:id="@+id/course_name7"
+                        android:layout_height="wrap_content"
+                        android:layout_width="280dp"
+                        android:text="@string/COMP7103"
+                        android:textSize="20sp"
+                        android:textColor="@color/colorName" />
+
+                    <TextView
+                        android:layout_toEndOf="@id/course_name7"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/arrow_down"
+                        android:textSize="20sp"
+                        android:textColor="@color/colorName"/>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/course_name7"
+                        android:text="@string/COMP7103_description"
+                        android:textSize="18sp"
+                        android:textColor="@color/colorName"
+                        android:visibility="gone"
+                        android:justificationMode="inter_word"
+                        tools:targetApi="O" />
+
+                </RelativeLayout>
+            </TableRow>
+
+            <TableRow
+                android:background="@drawable/fc_row_bg">
+                <TextView
+                    android:text="COMP7405"
+                    android:textSize="20sp"
+                    android:textColor="@color/colorName"
+                    android:paddingHorizontal="1dp"
+                    tools:targetApi="o" />
+
+                <RelativeLayout
+                    android:background="@drawable/fc_row_right_item_bg"
+                    android:paddingTop="1dp"
+                    android:paddingEnd="1dp"
+                    android:paddingBottom="1dp"
+                    android:paddingStart="2dp"
+                    android:onClick="toggleContent">
+
+                    <TextView
+                        android:id="@+id/course_name8"
+                        android:layout_height="wrap_content"
+                        android:layout_width="280dp"
+                        android:text="@string/COMP7405"
+                        android:textSize="20sp"
+                        android:textColor="@color/colorName" />
+
+                    <TextView
+                        android:layout_toEndOf="@id/course_name8"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/arrow_down"
+                        android:textSize="20sp"
+                        android:textColor="@color/colorName"/>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/course_name8"
+                        android:text="@string/COMP7405_description"
+                        android:textSize="18sp"
+                        android:textColor="@color/colorName"
+                        android:visibility="gone"
+                        android:justificationMode="inter_word"
+                        tools:targetApi="O" />
+
+                </RelativeLayout>
+            </TableRow>
+
+            <TableRow
+                android:background="@drawable/fc_row_bg">
+                <TextView
+                    android:text="COMP7406"
+                    android:textSize="20sp"
+                    android:textColor="@color/colorName"
+                    android:paddingHorizontal="1dp"
+                    tools:targetApi="o" />
+
+                <RelativeLayout
+                    android:background="@drawable/fc_row_right_item_bg"
+                    android:paddingTop="1dp"
+                    android:paddingEnd="1dp"
+                    android:paddingBottom="1dp"
+                    android:paddingStart="2dp"
+                    android:onClick="toggleContent">
+
+                    <TextView
+                        android:id="@+id/course_name9"
+                        android:layout_height="wrap_content"
+                        android:layout_width="280dp"
+                        android:text="@string/COMP7406"
+                        android:textSize="20sp"
+                        android:textColor="@color/colorName" />
+
+                    <TextView
+                        android:layout_toEndOf="@id/course_name9"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/arrow_down"
+                        android:textSize="20sp"
+                        android:textColor="@color/colorName"/>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/course_name9"
+                        android:text="@string/COMP7406_description"
+                        android:textSize="18sp"
+                        android:textColor="@color/colorName"
+                        android:visibility="gone"
+                        android:justificationMode="inter_word"
+                        tools:targetApi="O" />
+
+                </RelativeLayout>
+            </TableRow>
+
+            <TableRow
+                android:background="@drawable/fc_row_bg">
+                <TextView
+                    android:text="COMP7407"
+                    android:textSize="20sp"
+                    android:textColor="@color/colorName"
+                    android:paddingHorizontal="1dp"
+                    tools:targetApi="o" />
+
+                <RelativeLayout
+                    android:background="@drawable/fc_row_right_item_bg"
+                    android:paddingTop="1dp"
+                    android:paddingEnd="1dp"
+                    android:paddingBottom="1dp"
+                    android:paddingStart="2dp"
+                    android:onClick="toggleContent">
+
+                    <TextView
+                        android:id="@+id/course_name10"
+                        android:layout_height="wrap_content"
+                        android:layout_width="280dp"
+                        android:text="@string/COMP7407"
+                        android:textSize="20sp"
+                        android:textColor="@color/colorName" />
+
+                    <TextView
+                        android:layout_toEndOf="@id/course_name10"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/arrow_down"
+                        android:textSize="20sp"
+                        android:textColor="@color/colorName"/>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/course_name10"
+                        android:text="@string/COMP7407_description"
+                        android:textSize="18sp"
+                        android:textColor="@color/colorName"
+                        android:visibility="gone"
+                        android:justificationMode="inter_word"
+                        tools:targetApi="O" />
+
+                </RelativeLayout>
+            </TableRow>
+
+            <TableRow
+                android:background="@drawable/fc_row_bg">
+                <TextView
+                    android:text="COMP7408"
+                    android:textSize="20sp"
+                    android:textColor="@color/colorName"
+                    android:paddingHorizontal="1dp"
+                    tools:targetApi="o" />
+
+                <RelativeLayout
+                    android:background="@drawable/fc_row_right_item_bg"
+                    android:paddingTop="1dp"
+                    android:paddingEnd="1dp"
+                    android:paddingBottom="1dp"
+                    android:paddingStart="2dp"
+                    android:onClick="toggleContent">
+
+                    <TextView
+                        android:id="@+id/course_name11"
+                        android:layout_height="wrap_content"
+                        android:layout_width="280dp"
+                        android:text="@string/COMP7408"
+                        android:textSize="20sp"
+                        android:textColor="@color/colorName" />
+
+                    <TextView
+                        android:layout_toEndOf="@id/course_name11"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/arrow_down"
+                        android:textSize="20sp"
+                        android:textColor="@color/colorName"/>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/course_name11"
+                        android:text="@string/COMP7408_description"
+                        android:textSize="18sp"
+                        android:textColor="@color/colorName"
+                        android:visibility="gone"
+                        android:justificationMode="inter_word"
+                        tools:targetApi="O" />
+
+                </RelativeLayout>
+            </TableRow>
+
+            <TableRow
+                android:background="@drawable/fc_row_bg">
+                <TextView
+                    android:text="COMP7802"
+                    android:textSize="20sp"
+                    android:textColor="@color/colorName"
+                    android:paddingHorizontal="1dp"
+                    tools:targetApi="o" />
+
+                <RelativeLayout
+                    android:background="@drawable/fc_row_right_item_bg"
+                    android:paddingTop="1dp"
+                    android:paddingEnd="1dp"
+                    android:paddingBottom="1dp"
+                    android:paddingStart="2dp"
+                    android:onClick="toggleContent">
+
+                    <TextView
+                        android:id="@+id/course_name12"
+                        android:layout_height="wrap_content"
+                        android:layout_width="280dp"
+                        android:text="@string/COMP7802"
+                        android:textSize="20sp"
+                        android:textColor="@color/colorName" />
+
+                    <TextView
+                        android:layout_toEndOf="@id/course_name12"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/arrow_down"
+                        android:textSize="20sp"
+                        android:textColor="@color/colorName"/>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/course_name12"
+                        android:text="@string/COMP7802_description"
+                        android:textSize="18sp"
+                        android:textColor="@color/colorName"
+                        android:visibility="gone"
+                        android:justificationMode="inter_word"
+                        tools:targetApi="O" />
+
+                </RelativeLayout>
+            </TableRow>
+
+            <TableRow
+                android:background="@drawable/fc_row_bg">
+                <TextView
+                    android:text="COMP7808"
+                    android:textSize="20sp"
+                    android:textColor="@color/colorName"
+                    android:paddingHorizontal="1dp"
+                    tools:targetApi="o" />
+
+                <RelativeLayout
+                    android:background="@drawable/fc_row_right_item_bg"
+                    android:paddingTop="1dp"
+                    android:paddingEnd="1dp"
+                    android:paddingBottom="1dp"
+                    android:paddingStart="2dp"
+                    android:onClick="toggleContent">
+
+                    <TextView
+                        android:id="@+id/course_name13"
+                        android:layout_height="wrap_content"
+                        android:layout_width="280dp"
+                        android:text="@string/COMP7808"
+                        android:textSize="20sp"
+                        android:textColor="@color/colorName" />
+
+                    <TextView
+                        android:layout_toEndOf="@id/course_name13"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/arrow_down"
+                        android:textSize="20sp"
+                        android:textColor="@color/colorName"/>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/course_name13"
+                        android:text="@string/COMP7808_description"
+                        android:textSize="18sp"
+                        android:textColor="@color/colorName"
+                        android:visibility="gone"
+                        android:justificationMode="inter_word"
+                        tools:targetApi="O" />
+
+                </RelativeLayout>
+            </TableRow>
+
+            <TableRow
+                android:background="@drawable/fc_row_bg">
+                <TextView
+                    android:text="COMP7906"
+                    android:textSize="20sp"
+                    android:textColor="@color/colorName"
+                    android:paddingHorizontal="1dp"
+                    tools:targetApi="o" />
+
+                <RelativeLayout
+                    android:background="@drawable/fc_row_right_item_bg"
+                    android:paddingTop="1dp"
+                    android:paddingEnd="1dp"
+                    android:paddingBottom="1dp"
+                    android:paddingStart="2dp"
+                    android:onClick="toggleContent">
+
+                    <TextView
+                        android:id="@+id/course_name14"
+                        android:layout_height="wrap_content"
+                        android:layout_width="280dp"
+                        android:text="@string/COMP7906"
+                        android:textSize="20sp"
+                        android:textColor="@color/colorName" />
+
+                    <TextView
+                        android:layout_toEndOf="@id/course_name14"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/arrow_down"
+                        android:textSize="20sp"
+                        android:textColor="@color/colorName"/>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/course_name14"
+                        android:text="@string/COMP7906_description"
+                        android:textSize="18sp"
+                        android:textColor="@color/colorName"
+                        android:visibility="gone"
+                        android:justificationMode="inter_word"
+                        tools:targetApi="O" />
+
+                </RelativeLayout>
+            </TableRow>
+
+            <TableRow>
+                <TextView
+                    android:text="@string/multimedia_computing"
+                    android:textSize="30sp"
+                    android:textColor="@color/colorName"
+                    android:layout_span="2"
+                    android:gravity="center_horizontal"
+                    android:background="@drawable/mc_head_bg"/>
+            </TableRow>
+
+            <TableRow
+                android:background="@drawable/mc_row_bg">
+                <TextView
+                    android:text="COMP7502"
+                    android:textSize="20sp"
+                    android:textColor="@color/colorName"
+                    android:paddingHorizontal="1dp"
+                    tools:targetApi="o" />
+
+                <RelativeLayout
+                    android:background="@drawable/mc_row_right_item_bg"
+                    android:paddingTop="1dp"
+                    android:paddingEnd="1dp"
+                    android:paddingBottom="1dp"
+                    android:paddingStart="2dp"
+                    android:onClick="toggleContent">
+
+                    <TextView
+                        android:id="@+id/course_name15"
+                        android:layout_height="wrap_content"
+                        android:layout_width="280dp"
+                        android:text="@string/COMP7502"
+                        android:textSize="20sp"
+                        android:textColor="@color/colorName" />
+
+                    <TextView
+                        android:layout_toEndOf="@id/course_name15"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/arrow_down"
+                        android:textSize="20sp"
+                        android:textColor="@color/colorName"/>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/course_name15"
+                        android:text="@string/COMP7502_description"
+                        android:textSize="18sp"
+                        android:textColor="@color/colorName"
+                        android:visibility="gone"
+                        android:justificationMode="inter_word"
+                        tools:targetApi="O" />
+
+                </RelativeLayout>
+            </TableRow>
+
+            <TableRow
+                android:background="@drawable/mc_row_bg">
+                <TextView
+                    android:text="COMP7503"
+                    android:textSize="20sp"
+                    android:textColor="@color/colorName"
+                    android:paddingHorizontal="1dp"
+                    tools:targetApi="o" />
+
+                <RelativeLayout
+                    android:background="@drawable/mc_row_right_item_bg"
+                    android:paddingTop="1dp"
+                    android:paddingEnd="1dp"
+                    android:paddingBottom="1dp"
+                    android:paddingStart="2dp"
+                    android:onClick="toggleContent">
+
+                    <TextView
+                        android:id="@+id/course_name16"
+                        android:layout_height="wrap_content"
+                        android:layout_width="280dp"
+                        android:text="@string/COMP7503"
+                        android:textSize="20sp"
+                        android:textColor="@color/colorName" />
+
+                    <TextView
+                        android:layout_toEndOf="@id/course_name16"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/arrow_down"
+                        android:textSize="20sp"
+                        android:textColor="@color/colorName"/>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/course_name16"
+                        android:text="@string/COMP7503_description"
+                        android:textSize="18sp"
+                        android:textColor="@color/colorName"
+                        android:visibility="gone"
+                        android:justificationMode="inter_word"
+                        tools:targetApi="O" />
+
+                </RelativeLayout>
+            </TableRow>
+
+            <TableRow
+                android:background="@drawable/mc_row_bg">
+                <TextView
+                    android:text="COMP7504"
+                    android:textSize="20sp"
+                    android:textColor="@color/colorName"
+                    android:paddingHorizontal="1dp"
+                    tools:targetApi="o" />
+
+                <RelativeLayout
+                    android:background="@drawable/mc_row_right_item_bg"
+                    android:paddingTop="1dp"
+                    android:paddingEnd="1dp"
+                    android:paddingBottom="1dp"
+                    android:paddingStart="2dp"
+                    android:onClick="toggleContent">
+
+                    <TextView
+                        android:id="@+id/course_name17"
+                        android:layout_height="wrap_content"
+                        android:layout_width="280dp"
+                        android:text="@string/COMP7504"
+                        android:textSize="20sp"
+                        android:textColor="@color/colorName" />
+
+                    <TextView
+                        android:layout_toEndOf="@id/course_name17"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/arrow_down"
+                        android:textSize="20sp"
+                        android:textColor="@color/colorName"/>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/course_name17"
+                        android:text="@string/COMP7504_description"
+                        android:textSize="18sp"
+                        android:textColor="@color/colorName"
+                        android:visibility="gone"
+                        android:justificationMode="inter_word"
+                        tools:targetApi="O" />
+
+                </RelativeLayout>
+            </TableRow>
+
+            <TableRow
+                android:background="@drawable/mc_row_bg">
+                <TextView
+                    android:text="COMP7505"
+                    android:textSize="20sp"
+                    android:textColor="@color/colorName"
+                    android:paddingHorizontal="1dp"
+                    tools:targetApi="o" />
+
+                <RelativeLayout
+                    android:background="@drawable/mc_row_right_item_bg"
+                    android:paddingTop="1dp"
+                    android:paddingEnd="1dp"
+                    android:paddingBottom="1dp"
+                    android:paddingStart="2dp"
+                    android:onClick="toggleContent">
+
+                    <TextView
+                        android:id="@+id/course_name18"
+                        android:layout_height="wrap_content"
+                        android:layout_width="280dp"
+                        android:text="@string/COMP7505"
+                        android:textSize="20sp"
+                        android:textColor="@color/colorName" />
+
+                    <TextView
+                        android:layout_toEndOf="@id/course_name18"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/arrow_down"
+                        android:textSize="20sp"
+                        android:textColor="@color/colorName"/>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/course_name18"
+                        android:text="@string/COMP7505_description"
+                        android:textSize="18sp"
+                        android:textColor="@color/colorName"
+                        android:visibility="gone"
+                        android:justificationMode="inter_word"
+                        tools:targetApi="O" />
+
+                </RelativeLayout>
+            </TableRow>
+
+            <TableRow
+                android:background="@drawable/mc_row_bg">
+                <TextView
+                    android:text="COMP7506"
+                    android:textSize="20sp"
+                    android:textColor="@color/colorName"
+                    android:paddingHorizontal="1dp"
+                    tools:targetApi="o" />
+
+                <RelativeLayout
+                    android:background="@drawable/mc_row_right_item_bg"
+                    android:paddingTop="1dp"
+                    android:paddingEnd="1dp"
+                    android:paddingBottom="1dp"
+                    android:paddingStart="2dp"
+                    android:onClick="toggleContent">
+
+                    <TextView
+                        android:id="@+id/course_name19"
+                        android:layout_height="wrap_content"
+                        android:layout_width="280dp"
+                        android:text="@string/COMP7506"
+                        android:textSize="20sp"
+                        android:textColor="@color/colorName" />
+
+                    <TextView
+                        android:layout_toEndOf="@id/course_name19"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/arrow_down"
+                        android:textSize="20sp"
+                        android:textColor="@color/colorName"/>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/course_name19"
+                        android:text="@string/COMP7506_description"
+                        android:textSize="18sp"
+                        android:textColor="@color/colorName"
+                        android:visibility="gone"
+                        android:justificationMode="inter_word"
+                        tools:targetApi="O" />
+
+                </RelativeLayout>
+            </TableRow>
+
+            <TableRow
+                android:background="@drawable/mc_row_bg">
+                <TextView
+                    android:text="COMP7507"
+                    android:textSize="20sp"
+                    android:textColor="@color/colorName"
+                    android:paddingHorizontal="1dp"
+                    tools:targetApi="o" />
+
+                <RelativeLayout
+                    android:background="@drawable/mc_row_right_item_bg"
+                    android:paddingTop="1dp"
+                    android:paddingEnd="1dp"
+                    android:paddingBottom="1dp"
+                    android:paddingStart="2dp"
+                    android:onClick="toggleContent">
+
+                    <TextView
+                        android:id="@+id/course_name20"
+                        android:layout_height="wrap_content"
+                        android:layout_width="280dp"
+                        android:text="@string/COMP7507"
+                        android:textSize="20sp"
+                        android:textColor="@color/colorName" />
+
+                    <TextView
+                        android:layout_toEndOf="@id/course_name20"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/arrow_down"
+                        android:textSize="20sp"
+                        android:textColor="@color/colorName"/>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/course_name20"
+                        android:text="@string/COMP7507_description"
+                        android:textSize="18sp"
+                        android:textColor="@color/colorName"
+                        android:visibility="gone"
+                        android:justificationMode="inter_word"
+                        tools:targetApi="O" />
+
+                </RelativeLayout>
+            </TableRow>
+
+            <TableRow
+                android:background="@drawable/mc_row_bg">
+                <TextView
+                    android:text="COMP7604"
+                    android:textSize="20sp"
+                    android:textColor="@color/colorName"
+                    android:paddingHorizontal="1dp"
+                    tools:targetApi="o" />
+
+                <RelativeLayout
+                    android:background="@drawable/mc_row_right_item_bg"
+                    android:paddingTop="1dp"
+                    android:paddingEnd="1dp"
+                    android:paddingBottom="1dp"
+                    android:paddingStart="2dp"
+                    android:onClick="toggleContent">
+
+                    <TextView
+                        android:id="@+id/course_name21"
+                        android:layout_height="wrap_content"
+                        android:layout_width="280dp"
+                        android:text="@string/COMP7604"
+                        android:textSize="20sp"
+                        android:textColor="@color/colorName" />
+
+                    <TextView
+                        android:layout_toEndOf="@id/course_name21"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/arrow_down"
+                        android:textSize="20sp"
+                        android:textColor="@color/colorName"/>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/course_name21"
+                        android:text="@string/COMP7604_description"
+                        android:textSize="18sp"
+                        android:textColor="@color/colorName"
+                        android:visibility="gone"
+                        android:justificationMode="inter_word"
+                        tools:targetApi="O" />
+
+                </RelativeLayout>
+            </TableRow>
+
+            <TableRow
+                android:background="@drawable/mc_row_bg">
+                <TextView
+                    android:text="COMP7807"
+                    android:textSize="20sp"
+                    android:textColor="@color/colorName"
+                    android:paddingHorizontal="1dp"
+                    tools:targetApi="o" />
+
+                <RelativeLayout
+                    android:background="@drawable/mc_row_right_item_bg"
+                    android:paddingTop="1dp"
+                    android:paddingEnd="1dp"
+                    android:paddingBottom="1dp"
+                    android:paddingStart="2dp"
+                    android:onClick="toggleContent">
+
+                    <TextView
+                        android:id="@+id/course_name22"
+                        android:layout_height="wrap_content"
+                        android:layout_width="280dp"
+                        android:text="@string/COMP7807"
+                        android:textSize="20sp"
+                        android:textColor="@color/colorName" />
+
+                    <TextView
+                        android:layout_toEndOf="@id/course_name22"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/arrow_down"
+                        android:textSize="20sp"
+                        android:textColor="@color/colorName"/>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/course_name22"
+                        android:text="@string/COMP7807_description"
+                        android:textSize="18sp"
+                        android:textColor="@color/colorName"
+                        android:visibility="gone"
+                        android:justificationMode="inter_word"
+                        tools:targetApi="O" />
+
+                </RelativeLayout>
+            </TableRow>
+
+            <TableRow>
+                <TextView
+                    android:text="@string/other_courses"
+                    android:textSize="30sp"
+                    android:textColor="@color/colorName"
+                    android:layout_span="2"
+                    android:gravity="center_horizontal"
+                    android:background="@drawable/oc_head_bg"/>
+            </TableRow>
+
+            <TableRow
+                android:background="@drawable/oc_row_bg">
+                <TextView
+                    android:text="COMP7104"
+                    android:textSize="20sp"
+                    android:textColor="@color/colorName"
+                    android:paddingHorizontal="1dp"
+                    tools:targetApi="o" />
+
+                <RelativeLayout
+                    android:background="@drawable/oc_row_right_item_bg"
+                    android:paddingTop="1dp"
+                    android:paddingEnd="1dp"
+                    android:paddingBottom="1dp"
+                    android:paddingStart="2dp"
+                    android:onClick="toggleContent">
+
+                    <TextView
+                        android:id="@+id/course_name23"
+                        android:layout_height="wrap_content"
+                        android:layout_width="280dp"
+                        android:text="@string/COMP7104"
+                        android:textSize="20sp"
+                        android:textColor="@color/colorName" />
+
+                    <TextView
+                        android:layout_toEndOf="@id/course_name23"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/arrow_down"
+                        android:textSize="20sp"
+                        android:textColor="@color/colorName"/>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/course_name23"
+                        android:text="@string/COMP7104_description"
+                        android:textSize="18sp"
+                        android:textColor="@color/colorName"
+                        android:visibility="gone"
+                        android:justificationMode="inter_word"
+                        tools:targetApi="O" />
+
+                </RelativeLayout>
+            </TableRow>
+
+            <TableRow
+                android:background="@drawable/oc_row_bg">
+                <TextView
+                    android:text="COMP7201"
+                    android:textSize="20sp"
+                    android:textColor="@color/colorName"
+                    android:paddingHorizontal="1dp"
+                    tools:targetApi="o" />
+
+                <RelativeLayout
+                    android:background="@drawable/oc_row_right_item_bg"
+                    android:paddingTop="1dp"
+                    android:paddingEnd="1dp"
+                    android:paddingBottom="1dp"
+                    android:paddingStart="2dp"
+                    android:onClick="toggleContent">
+
+                    <TextView
+                        android:id="@+id/course_name24"
+                        android:layout_height="wrap_content"
+                        android:layout_width="280dp"
+                        android:text="@string/COMP7201"
+                        android:textSize="20sp"
+                        android:textColor="@color/colorName" />
+
+                    <TextView
+                        android:layout_toEndOf="@id/course_name24"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/arrow_down"
+                        android:textSize="20sp"
+                        android:textColor="@color/colorName"/>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/course_name24"
+                        android:text="@string/COMP7201_description"
+                        android:textSize="18sp"
+                        android:textColor="@color/colorName"
+                        android:visibility="gone"
+                        android:justificationMode="inter_word"
+                        tools:targetApi="O" />
+
+                </RelativeLayout>
+            </TableRow>
+
+            <TableRow
+                android:background="@drawable/oc_row_bg">
+                <TextView
+                    android:text="COMP7203"
+                    android:textSize="20sp"
+                    android:textColor="@color/colorName"
+                    android:paddingHorizontal="1dp"
+                    tools:targetApi="o" />
+
+                <RelativeLayout
+                    android:background="@drawable/oc_row_right_item_bg"
+                    android:paddingTop="1dp"
+                    android:paddingEnd="1dp"
+                    android:paddingBottom="1dp"
+                    android:paddingStart="2dp"
+                    android:onClick="toggleContent">
+
+                    <TextView
+                        android:id="@+id/course_name25"
+                        android:layout_height="wrap_content"
+                        android:layout_width="280dp"
+                        android:text="@string/COMP7203"
+                        android:textSize="20sp"
+                        android:textColor="@color/colorName" />
+
+                    <TextView
+                        android:layout_toEndOf="@id/course_name25"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/arrow_down"
+                        android:textSize="20sp"
+                        android:textColor="@color/colorName"/>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/course_name25"
+                        android:text="@string/COMP7203_description"
+                        android:textSize="18sp"
+                        android:textColor="@color/colorName"
+                        android:visibility="gone"
+                        android:justificationMode="inter_word"
+                        tools:targetApi="O" />
+
+                </RelativeLayout>
+            </TableRow>
+
+            <TableRow
+                android:background="@drawable/oc_row_bg">
+                <TextView
+                    android:text="COMP7205"
+                    android:textSize="20sp"
+                    android:textColor="@color/colorName"
+                    android:paddingHorizontal="1dp"
+                    tools:targetApi="o" />
+
+                <RelativeLayout
+                    android:background="@drawable/oc_row_right_item_bg"
+                    android:paddingTop="1dp"
+                    android:paddingEnd="1dp"
+                    android:paddingBottom="1dp"
+                    android:paddingStart="2dp"
+                    android:onClick="toggleContent">
+
+                    <TextView
+                        android:id="@+id/course_name26"
+                        android:layout_height="wrap_content"
+                        android:layout_width="280dp"
+                        android:text="@string/COMP7205"
+                        android:textSize="20sp"
+                        android:textColor="@color/colorName" />
+
+                    <TextView
+                        android:layout_toEndOf="@id/course_name26"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/arrow_down"
+                        android:textSize="20sp"
+                        android:textColor="@color/colorName"/>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/course_name26"
+                        android:text="@string/COMP7205_description"
+                        android:textSize="18sp"
+                        android:textColor="@color/colorName"
+                        android:visibility="gone"
+                        android:justificationMode="inter_word"
+                        tools:targetApi="O" />
+
+                </RelativeLayout>
+            </TableRow>
+
+            <TableRow
+                android:background="@drawable/oc_row_bg">
+                <TextView
+                    android:text="COMP7303"
+                    android:textSize="20sp"
+                    android:textColor="@color/colorName"
+                    android:paddingHorizontal="1dp"
+                    tools:targetApi="o" />
+
+                <RelativeLayout
+                    android:background="@drawable/oc_row_right_item_bg"
+                    android:paddingTop="1dp"
+                    android:paddingEnd="1dp"
+                    android:paddingBottom="1dp"
+                    android:paddingStart="2dp"
+                    android:onClick="toggleContent">
+
+                    <TextView
+                        android:id="@+id/course_name27"
+                        android:layout_height="wrap_content"
+                        android:layout_width="280dp"
+                        android:text="@string/COMP7303"
+                        android:textSize="20sp"
+                        android:textColor="@color/colorName" />
+
+                    <TextView
+                        android:layout_toEndOf="@id/course_name27"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/arrow_down"
+                        android:textSize="20sp"
+                        android:textColor="@color/colorName"/>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/course_name27"
+                        android:text="@string/COMP7303_description"
+                        android:textSize="18sp"
+                        android:textColor="@color/colorName"
+                        android:visibility="gone"
+                        android:justificationMode="inter_word"
+                        tools:targetApi="O" />
+
+                </RelativeLayout>
+            </TableRow>
+
+            <TableRow
+                android:background="@drawable/oc_row_bg">
+                <TextView
+                    android:text="COMP7304"
+                    android:textSize="20sp"
+                    android:textColor="@color/colorName"
+                    android:paddingHorizontal="1dp"
+                    tools:targetApi="o" />
+
+                <RelativeLayout
+                    android:background="@drawable/oc_row_right_item_bg"
+                    android:paddingTop="1dp"
+                    android:paddingEnd="1dp"
+                    android:paddingBottom="1dp"
+                    android:paddingStart="2dp"
+                    android:onClick="toggleContent">
+
+                    <TextView
+                        android:id="@+id/course_name28"
+                        android:layout_height="wrap_content"
+                        android:layout_width="280dp"
+                        android:text="@string/COMP7304"
+                        android:textSize="20sp"
+                        android:textColor="@color/colorName" />
+
+                    <TextView
+                        android:layout_toEndOf="@id/course_name28"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/arrow_down"
+                        android:textSize="20sp"
+                        android:textColor="@color/colorName"/>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/course_name28"
+                        android:text="@string/COMP7304_description"
+                        android:textSize="18sp"
+                        android:textColor="@color/colorName"
+                        android:visibility="gone"
+                        android:justificationMode="inter_word"
+                        tools:targetApi="O" />
+
+                </RelativeLayout>
+            </TableRow>
+
+            <TableRow
+                android:background="@drawable/oc_row_bg">
+                <TextView
+                    android:text="COMP7305"
+                    android:textSize="20sp"
+                    android:textColor="@color/colorName"
+                    android:paddingHorizontal="1dp"
+                    tools:targetApi="o" />
+
+                <RelativeLayout
+                    android:background="@drawable/oc_row_right_item_bg"
+                    android:paddingTop="1dp"
+                    android:paddingEnd="1dp"
+                    android:paddingBottom="1dp"
+                    android:paddingStart="2dp"
+                    android:onClick="toggleContent">
+
+                    <TextView
+                        android:id="@+id/course_name29"
+                        android:layout_height="wrap_content"
+                        android:layout_width="280dp"
+                        android:text="@string/COMP7305"
+                        android:textSize="20sp"
+                        android:textColor="@color/colorName" />
+
+                    <TextView
+                        android:layout_toEndOf="@id/course_name29"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/arrow_down"
+                        android:textSize="20sp"
+                        android:textColor="@color/colorName"/>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/course_name29"
+                        android:text="@string/COMP7305_description"
+                        android:textSize="18sp"
+                        android:textColor="@color/colorName"
+                        android:visibility="gone"
+                        android:justificationMode="inter_word"
+                        tools:targetApi="O" />
+
+                </RelativeLayout>
+            </TableRow>
+
+            <TableRow
+                android:background="@drawable/oc_row_bg">
+                <TextView
+                    android:text="COMP7306"
+                    android:textSize="20sp"
+                    android:textColor="@color/colorName"
+                    android:paddingHorizontal="1dp"
+                    tools:targetApi="o" />
+
+                <RelativeLayout
+                    android:background="@drawable/oc_row_right_item_bg"
+                    android:paddingTop="1dp"
+                    android:paddingEnd="1dp"
+                    android:paddingBottom="1dp"
+                    android:paddingStart="2dp"
+                    android:onClick="toggleContent">
+
+                    <TextView
+                        android:id="@+id/course_name30"
+                        android:layout_height="wrap_content"
+                        android:layout_width="280dp"
+                        android:text="@string/COMP7306"
+                        android:textSize="20sp"
+                        android:textColor="@color/colorName" />
+
+                    <TextView
+                        android:layout_toEndOf="@id/course_name30"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/arrow_down"
+                        android:textSize="20sp"
+                        android:textColor="@color/colorName"/>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/course_name30"
+                        android:text="@string/COMP7306_description"
+                        android:textSize="18sp"
+                        android:textColor="@color/colorName"
+                        android:visibility="gone"
+                        android:justificationMode="inter_word"
+                        tools:targetApi="O" />
+
+                </RelativeLayout>
+            </TableRow>
+
+            <TableRow
+                android:background="@drawable/oc_row_bg">
+                <TextView
+                    android:text="COMP7307"
+                    android:textSize="20sp"
+                    android:textColor="@color/colorName"
+                    android:paddingHorizontal="1dp"
+                    tools:targetApi="o" />
+
+                <RelativeLayout
+                    android:background="@drawable/oc_row_right_item_bg"
+                    android:paddingTop="1dp"
+                    android:paddingEnd="1dp"
+                    android:paddingBottom="1dp"
+                    android:paddingStart="2dp"
+                    android:onClick="toggleContent">
+
+                    <TextView
+                        android:id="@+id/course_name31"
+                        android:layout_height="wrap_content"
+                        android:layout_width="280dp"
+                        android:text="@string/COMP7307"
+                        android:textSize="20sp"
+                        android:textColor="@color/colorName" />
+
+                    <TextView
+                        android:layout_toEndOf="@id/course_name31"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/arrow_down"
+                        android:textSize="20sp"
+                        android:textColor="@color/colorName"/>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/course_name31"
+                        android:text="@string/COMP7307_description"
+                        android:textSize="18sp"
+                        android:textColor="@color/colorName"
+                        android:visibility="gone"
+                        android:justificationMode="inter_word"
+                        tools:targetApi="O" />
+
+                </RelativeLayout>
+            </TableRow>
+
+            <TableRow
+                android:background="@drawable/oc_row_bg">
+                <TextView
+                    android:text="COMP7403"
+                    android:textSize="20sp"
+                    android:textColor="@color/colorName"
+                    android:paddingHorizontal="1dp"
+                    tools:targetApi="o" />
+
+                <RelativeLayout
+                    android:background="@drawable/oc_row_right_item_bg"
+                    android:paddingTop="1dp"
+                    android:paddingEnd="1dp"
+                    android:paddingBottom="1dp"
+                    android:paddingStart="2dp"
+                    android:onClick="toggleContent">
+
+                    <TextView
+                        android:id="@+id/course_name32"
+                        android:layout_height="wrap_content"
+                        android:layout_width="280dp"
+                        android:text="@string/COMP7403"
+                        android:textSize="20sp"
+                        android:textColor="@color/colorName" />
+
+                    <TextView
+                        android:layout_toEndOf="@id/course_name32"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/arrow_down"
+                        android:textSize="20sp"
+                        android:textColor="@color/colorName"/>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/course_name32"
+                        android:text="@string/COMP7403_description"
+                        android:textSize="18sp"
+                        android:textColor="@color/colorName"
+                        android:visibility="gone"
+                        android:justificationMode="inter_word"
+                        tools:targetApi="O" />
+
+                </RelativeLayout>
+            </TableRow>
+
+            <TableRow
+                android:background="@drawable/oc_row_bg">
+                <TextView
+                    android:text="COMP7404"
+                    android:textSize="20sp"
+                    android:textColor="@color/colorName"
+                    android:paddingHorizontal="1dp"
+                    tools:targetApi="o" />
+
+                <RelativeLayout
+                    android:background="@drawable/oc_row_right_item_bg"
+                    android:paddingTop="1dp"
+                    android:paddingEnd="1dp"
+                    android:paddingBottom="1dp"
+                    android:paddingStart="2dp"
+                    android:onClick="toggleContent">
+
+                    <TextView
+                        android:id="@+id/course_name33"
+                        android:layout_height="wrap_content"
+                        android:layout_width="280dp"
+                        android:text="@string/COMP7404"
+                        android:textSize="20sp"
+                        android:textColor="@color/colorName" />
+
+                    <TextView
+                        android:layout_toEndOf="@id/course_name33"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/arrow_down"
+                        android:textSize="20sp"
+                        android:textColor="@color/colorName"/>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/course_name33"
+                        android:text="@string/COMP7404_description"
+                        android:textSize="18sp"
+                        android:textColor="@color/colorName"
+                        android:visibility="gone"
+                        android:justificationMode="inter_word"
+                        tools:targetApi="O" />
+
+                </RelativeLayout>
+            </TableRow>
+
+            <TableRow
+                android:background="@drawable/oc_row_bg">
+                <TextView
+                    android:text="COMP7606"
+                    android:textSize="20sp"
+                    android:textColor="@color/colorName"
+                    android:paddingHorizontal="1dp"
+                    tools:targetApi="o" />
+
+                <RelativeLayout
+                    android:background="@drawable/oc_row_right_item_bg"
+                    android:paddingTop="1dp"
+                    android:paddingEnd="1dp"
+                    android:paddingBottom="1dp"
+                    android:paddingStart="2dp"
+                    android:onClick="toggleContent">
+
+                    <TextView
+                        android:id="@+id/course_name34"
+                        android:layout_height="wrap_content"
+                        android:layout_width="280dp"
+                        android:text="@string/COMP7606"
+                        android:textSize="20sp"
+                        android:textColor="@color/colorName" />
+
+                    <TextView
+                        android:layout_toEndOf="@id/course_name34"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/arrow_down"
+                        android:textSize="20sp"
+                        android:textColor="@color/colorName"/>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/course_name34"
+                        android:text="@string/COMP7606_description"
+                        android:textSize="18sp"
+                        android:textColor="@color/colorName"
+                        android:visibility="gone"
+                        android:justificationMode="inter_word"
+                        tools:targetApi="O" />
+
+                </RelativeLayout>
+            </TableRow>
+
+            <TableRow
+                android:background="@drawable/oc_row_bg">
+                <TextView
+                    android:text="COMP7801"
+                    android:textSize="20sp"
+                    android:textColor="@color/colorName"
+                    android:paddingHorizontal="1dp"
+                    tools:targetApi="o" />
+
+                <RelativeLayout
+                    android:background="@drawable/oc_row_right_item_bg"
+                    android:paddingTop="1dp"
+                    android:paddingEnd="1dp"
+                    android:paddingBottom="1dp"
+                    android:paddingStart="2dp"
+                    android:onClick="toggleContent">
+
+                    <TextView
+                        android:id="@+id/course_name35"
+                        android:layout_height="wrap_content"
+                        android:layout_width="280dp"
+                        android:text="@string/COMP7801"
+                        android:textSize="20sp"
+                        android:textColor="@color/colorName" />
+
+                    <TextView
+                        android:layout_toEndOf="@id/course_name35"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/arrow_down"
+                        android:textSize="20sp"
+                        android:textColor="@color/colorName"/>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/course_name35"
+                        android:text="@string/COMP7801_description"
+                        android:textSize="18sp"
+                        android:textColor="@color/colorName"
+                        android:visibility="gone"
+                        android:justificationMode="inter_word"
+                        tools:targetApi="O" />
+
+                </RelativeLayout>
+            </TableRow>
+
+            <TableRow
+                android:background="@drawable/oc_row_bg">
+                <TextView
+                    android:text="COMP7805"
+                    android:textSize="20sp"
+                    android:textColor="@color/colorName"
+                    android:paddingHorizontal="1dp"
+                    tools:targetApi="o" />
+
+                <RelativeLayout
+                    android:background="@drawable/oc_row_right_item_bg"
+                    android:paddingTop="1dp"
+                    android:paddingEnd="1dp"
+                    android:paddingBottom="1dp"
+                    android:paddingStart="2dp"
+                    android:onClick="toggleContent">
+
+                    <TextView
+                        android:id="@+id/course_name36"
+                        android:layout_height="wrap_content"
+                        android:layout_width="280dp"
+                        android:text="@string/COMP7805"
+                        android:textSize="20sp"
+                        android:textColor="@color/colorName" />
+
+                    <TextView
+                        android:layout_toEndOf="@id/course_name36"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/arrow_down"
+                        android:textSize="20sp"
+                        android:textColor="@color/colorName"/>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/course_name36"
+                        android:text="@string/COMP7805_description"
+                        android:textSize="18sp"
+                        android:textColor="@color/colorName"
+                        android:visibility="gone"
+                        android:justificationMode="inter_word"
+                        tools:targetApi="O" />
+
+                </RelativeLayout>
+            </TableRow>
+
+            <TableRow>
+                <TextView
+                    android:text="@string/capstone_experience_courses"
+                    android:textSize="30sp"
+                    android:textColor="@color/colorName"
+                    android:layout_span="2"
+                    android:gravity="center_horizontal"
+                    android:background="@drawable/ce_head_bg"/>
+            </TableRow>
+
+            <TableRow
+                android:background="@drawable/ce_row_bg">
+                <TextView
+                    android:text="COMP7704"
+                    android:textSize="20sp"
+                    android:textColor="@color/colorName"
+                    android:paddingHorizontal="1dp"
+                    tools:targetApi="o" />
+
+                <RelativeLayout
+                    android:background="@drawable/ce_row_right_item_bg"
+                    android:paddingTop="1dp"
+                    android:paddingEnd="1dp"
+                    android:paddingBottom="1dp"
+                    android:paddingStart="2dp"
+                    android:onClick="toggleContent">
+
+                    <TextView
+                        android:id="@+id/course_name37"
+                        android:layout_height="wrap_content"
+                        android:layout_width="280dp"
+                        android:text="@string/COMP7704"
+                        android:textSize="20sp"
+                        android:textColor="@color/colorName" />
+
+                    <TextView
+                        android:layout_toEndOf="@id/course_name37"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/arrow_down"
+                        android:textSize="20sp"
+                        android:textColor="@color/colorName"/>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/course_name37"
+                        android:text="@string/COMP7704_description"
+                        android:textSize="18sp"
+                        android:textColor="@color/colorName"
+                        android:visibility="gone"
+                        android:justificationMode="inter_word"
+                        tools:targetApi="O" />
+
+                </RelativeLayout>
+            </TableRow>
+
+            <TableRow
+                android:background="@drawable/ce_row_bg">
+                <TextView
+                    android:text="COMP7705"
+                    android:textSize="20sp"
+                    android:textColor="@color/colorName"
+                    android:paddingHorizontal="1dp"
+                    tools:targetApi="o" />
+
+                <RelativeLayout
+                    android:background="@drawable/ce_row_right_item_bg"
+                    android:paddingTop="1dp"
+                    android:paddingEnd="1dp"
+                    android:paddingBottom="1dp"
+                    android:paddingStart="2dp"
+                    android:onClick="toggleContent">
+
+                    <TextView
+                        android:id="@+id/course_name38"
+                        android:layout_height="wrap_content"
+                        android:layout_width="280dp"
+                        android:text="@string/COMP7705"
+                        android:textSize="20sp"
+                        android:textColor="@color/colorName" />
+
+                    <TextView
+                        android:layout_toEndOf="@id/course_name38"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/arrow_down"
+                        android:textSize="20sp"
+                        android:textColor="@color/colorName"/>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/course_name38"
+                        android:text="@string/COMP7705_description"
+                        android:textSize="18sp"
+                        android:textColor="@color/colorName"
+                        android:visibility="gone"
+                        android:justificationMode="inter_word"
+                        tools:targetApi="O" />
+
+                </RelativeLayout>
+            </TableRow>
+
+        </TableLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:textColor="@color/colorName"
+            android:textSize="22sp"
+            android:justificationMode="inter_word"
+            tools:targetApi="O"
+            android:text="Students with focussed streams of study have to take at least 24 credits courses (equivalent to four 6-credit courses) in the corresponding subject group." />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:textColor="@color/colorName"
+            android:textSize="22sp"
+            android:justificationMode="inter_word"
+            tools:targetApi="O"
+            android:text="# Subject to University's approval" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:textColor="@color/colorName"
+            android:textSize="22sp"
+            android:justificationMode="inter_word"
+            tools:targetApi="O"
+            android:text="Some courses taken by taught postgraduate students in the Faculty of Engineering have been approved by the HKSAR government as reimbursable courses under the Continuing Education Fund (CEF) for Hong Kong residents." />
+
+    </LinearLayout>
 
 </ScrollView>

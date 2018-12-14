@@ -1,8 +1,17 @@
 package hk.hku.cs.msccompsc_app.Curriculum;
 
 import android.os.Bundle;
+import android.view.View;
+import android.view.ViewGroup;
+import android.view.animation.AccelerateDecelerateInterpolator;
+import android.view.animation.Animation;
+import android.view.animation.AnimationUtils;
+import android.view.animation.TranslateAnimation;
+import android.widget.TextView;
 
 import com.google.android.material.tabs.TabLayout;
+
+import org.w3c.dom.Text;
 
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.fragment.app.Fragment;
@@ -34,7 +43,6 @@ public class CurriculumActivity extends AppCompatActivity {
 
 
     }
-
 
     /**
      * A {@link FragmentPagerAdapter} that returns a fragment corresponding to
@@ -74,6 +82,27 @@ public class CurriculumActivity extends AppCompatActivity {
         }
     }
 
+    public void toggleContent(View view) {
+        ViewGroup viewGroup = (ViewGroup) view;
+        TextView arrow = (TextView) viewGroup.getChildAt(1);
+        TextView description = (TextView) viewGroup.getChildAt(2);
 
+        switch (description.getVisibility()){
+            case View.GONE:
+                // reverse arrow
+                arrow.setText(R.string.arrow_up);
+                // set course description visible
+                description.setVisibility(View.VISIBLE);
 
+                break;
+
+            case View.VISIBLE:
+                // reverse arrow
+                arrow.setText(R.string.arrow_down);
+                // set course description gone
+                description.setVisibility(View.GONE);
+
+                break;
+        }
+    }
 }
