@@ -30,16 +30,16 @@
             android:parentActivityName=".MainActivity" />
         <activity
             android:name=".Curriculum.CurriculumActivity"
-            android:parentActivityName=".MainActivity"></activity>
+            android:parentActivityName=".MainActivity" />
         <activity
             android:name=".Curriculum.GAActivity"
-            android:parentActivityName=".MainActivity" >
-        </activity>
+            android:parentActivityName=".MainActivity"></activity>
         <activity
             android:name=".Curriculum.AlumniNewsPage"
-            android:parentActivityName=".Curriculum.GAActivity">
-
-        </activity>
+            android:parentActivityName=".Curriculum.GAActivity"></activity>
+        <activity
+            android:name=".ContactUs"
+            android:parentActivityName=".MainActivity"></activity>
     </application>
 
 </manifest>

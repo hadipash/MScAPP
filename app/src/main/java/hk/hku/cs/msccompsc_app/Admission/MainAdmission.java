@@ -25,6 +25,7 @@ public class MainAdmission extends AppCompatActivity {
         mSectionsPagerAdapter = new SectionsPagerAdapter(getSupportFragmentManager());
         mViewPager = findViewById(R.id.container_admit);
         mViewPager.setAdapter(mSectionsPagerAdapter);
+        mViewPager.setCurrentItem(getIntent().getIntExtra("tabID", 0));
 
         TabLayout tabLayout = findViewById(R.id.tabs_admit);
         mViewPager.addOnPageChangeListener(new TabLayout.TabLayoutOnPageChangeListener(tabLayout));

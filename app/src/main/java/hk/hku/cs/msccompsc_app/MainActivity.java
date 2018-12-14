@@ -62,8 +62,7 @@ public class MainActivity extends AppCompatActivity
         fab.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Snackbar.make(view, "Replace with your own action", Snackbar.LENGTH_LONG)
-                        .setAction("Action", null).show();
+                startActivity(new Intent(view.getContext(), ContactUs.class));
             }
         });
 
@@ -123,20 +122,10 @@ public class MainActivity extends AppCompatActivity
             Log.d(TAG, "Admission clicked.");
             Intent intent_admission = new Intent(this, MainAdmission.class);
             startActivity(intent_admission);
-        } else if (id == R.id.nav_slideshow) {
-
-
-        } else if (id == R.id.nav_manage) {
-
-        } else if (id == R.id.nav_share) {
-
-        } else if (id == R.id.nav_send) {
-
         } else if (id == R.id.nav_curriculum){
             Log.d(TAG, "Curriculum clicked.");
             Intent intent = new Intent(this, CurriculumActivity.class);
             startActivity(intent);
-
         } else if (id == R.id.nav_graduate_alumni){
             Log.d(TAG, "GA clicked.");
             Intent intent_ga = new Intent(this, GAActivity.class);
@@ -172,8 +161,35 @@ public class MainActivity extends AppCompatActivity
         }
     }
 
-    public void messageFromDirector(View view) {
-        //TODO: change later to the PD's message
+    public void messageFromDirectorButton(View view) {
+        Intent intent = new Intent(this, MainAbout.class);
+        intent.putExtra("tabID", 1);
+        startActivity(intent);
+    }
+
+    public void programmeOverviewButton(View view) {
+        startActivity(new Intent(this, CurriculumActivity.class));
+    }
+
+    public void admissionButton(View view) {
         startActivity(new Intent(this, MainAdmission.class));
+    }
+
+    public void programmeScheduleCard(View view) {
+        Intent intent = new Intent(this, CurriculumActivity.class);
+        intent.putExtra("tabID", 2);
+        startActivity(intent);
+    }
+
+    public void compositionFeesCard(View view) {
+        Intent intent = new Intent(this, MainAdmission.class);
+        intent.putExtra("tabID", 2);
+        startActivity(intent);
+    }
+
+    public void applicationDeadlineCard(View view) {
+        Intent intent = new Intent(this, MainAdmission.class);
+        intent.putExtra("tabID", 1);
+        startActivity(intent);
     }
 }

@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:fitsSystemWindows="true"
+    tools:context=".ContactUs">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/appbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/AppTheme.AppBarOverlay" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TableRow
+                android:layout_marginBottom="15dp">
+                <TextView
+                    android:text="Contact us"
+                    android:textColor="@color/colorName"
+                    android:textSize="30sp"
+                    android:textStyle="bold"
+                    android:layout_span="2" />
+            </TableRow>
+
+
+            <TableRow
+                android:layout_marginBottom="10dp">
+                <TextView
+                    android:text="The MSc Programme Office\nDepartment of Computer Science\nP3-02, Graduate House\nThe University of Hong Kong"
+                    android:textColor="@color/colorName"
+                    android:textSize="20sp"
+                    android:layout_span="2" />
+            </TableRow>
+
+            <TableRow>
+                <TextView
+                    android:text="Tel:"
+                    android:textSize="20sp"
+                    android:textColor="@color/colorName"/>
+                <TextView
+                    android:text="+85239171828"
+                    android:textSize="20sp"
+                    android:textColor="@color/colorName"
+                    android:autoLink="phone"/>
+            </TableRow>
+
+            <TableRow>
+                <TextView
+                    android:text="Fax:"
+                    android:textSize="20sp"
+                    android:textColor="@color/colorName"/>
+                <TextView
+                    android:text="+85225474442"
+                    android:textSize="20sp"
+                    android:textColor="@color/colorName"
+                    android:autoLink="phone"/>
+            </TableRow>
+
+            <TableRow>
+                <TextView
+                    android:text="Email:"
+                    android:textSize="20sp"
+                    android:textColor="@color/colorName"/>
+                <TextView
+                    android:text="msccs@cs.hku.hk"
+                    android:textSize="20sp"
+                    android:autoLink="email"/>
+            </TableRow>
+
+            <TableRow>
+                <TextView
+                    android:text="Website URL:"
+                    android:textSize="20sp"
+                    android:textColor="@color/colorName"/>
+                <TextView
+                    android:text="http://www.msc-cs.hku.hk"
+                    android:textSize="20sp"
+                    android:autoLink="web"/>
+            </TableRow>
+
+            <TableRow
+                android:layout_marginBottom="10dp" >
+                <TextView
+                    android:text="Facebook Page:"
+                    android:textSize="20sp"
+                    android:textColor="@color/colorName"/>
+                <TextView
+                    android:text="https://www.facebook.com/hkumsccs"
+                    android:textSize="20sp"
+                    android:autoLink="web"/>
+            </TableRow>
+
+            <TableRow>
+                <TextView
+                    android:text="Office Hours:"
+                    android:textColor="@color/colorName"
+                    android:textSize="20sp"
+                    android:layout_span="2"/>
+            </TableRow>
+
+            <TableRow>
+                <TextView
+                    android:text="Mon-Fri:"
+                    android:textSize="20sp"
+                    android:textColor="@color/colorName"
+                    android:layout_gravity="end"
+                    android:paddingEnd="10dp"/>
+                <TextView
+                    android:text="9:00am-12:30pm\n1:30pm-5:00pm"
+                    android:textSize="20sp"
+                    android:textColor="@color/colorName" />
+            </TableRow>
+            <TableRow>
+                <TextView
+                    android:text="Sat:"
+                    android:textSize="20sp"
+                    android:textColor="@color/colorName"
+                    android:layout_gravity="end"
+                    android:paddingEnd="10dp" />
+                <TextView
+                    android:text="9:00am-12:00pm"
+                    android:textSize="20sp"
+                    android:textColor="@color/colorName" />
+            </TableRow>
+
+        </TableLayout>
+
+    </ScrollView>
+
+</LinearLayout>

@@ -67,13 +67,13 @@
                 tools:targetApi="o" />
 
             <Button
-                android:id="@+id/prog_over_button"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="@string/more_detail"
                 android:layout_gravity="center"
                 android:layout_marginVertical="@dimen/std_margin_intra"
-                tools:targetApi="o" />
+                tools:targetApi="o"
+                android:onClick="programmeOverviewButton"/>
 
         </LinearLayout>
 
@@ -117,7 +117,7 @@
                     app:cardBackgroundColor="#4d000000"
                     app:cardCornerRadius="5dp"
                     app:cardElevation="0dp"
-                    android:onClick="messageFromDirector">
+                    android:onClick="messageFromDirectorButton">
 
                     <TextView
                         android:layout_width="match_parent"
@@ -171,12 +171,112 @@
                 android:text="@string/more_detail"
                 android:layout_gravity="center"
                 android:layout_marginVertical="@dimen/std_margin_intra"
-                tools:targetApi="o" />
+                tools:targetApi="o"
+                android:onClick="admissionButton"/>
 
-            <androidx.recyclerview.widget.RecyclerView
-                android:id="@+id/admission_recycler"
+            <androidx.cardview.widget.CardView
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content" />
+                android:layout_height="200dp"
+                app:cardCornerRadius="3dp"
+                android:onClick="programmeScheduleCard">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="3"
+                        android:scaleType="centerCrop"
+                        android:contentDescription="TODO"
+                        android:src="@drawable/programme_schedule"/>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="1"
+                        android:background="@color/colorAccent"
+                        android:text="Programme Schedule"
+                        android:textColor="#FFFFFF"
+                        android:textSize="20sp"
+                        android:gravity="center_vertical"
+                        android:paddingStart="10dp" />
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                app:cardCornerRadius="3dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:onClick="compositionFeesCard">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="3"
+                        android:scaleType="centerCrop"
+                        android:contentDescription="TODO"
+                        android:src="@drawable/programme_fees"/>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="1"
+                        android:background="@color/colorAccent"
+                        android:text="Composition Fees"
+                        android:textColor="#FFFFFF"
+                        android:textSize="20sp"
+                        android:gravity="center_vertical"
+                        android:paddingStart="10dp" />
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                app:cardCornerRadius="3dp"
+                android:onClick="applicationDeadlineCard">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="3"
+                        android:scaleType="centerCrop"
+                        android:contentDescription="TODO"
+                        android:src="@drawable/application_deadlines"/>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="1"
+                        android:background="@color/colorAccent"
+                        android:text="Application Deadlines"
+                        android:textColor="#FFFFFF"
+                        android:textSize="20sp"
+                        android:gravity="center_vertical"
+                        android:paddingStart="10dp" />
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
 
         </LinearLayout>
 
